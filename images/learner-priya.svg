@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 780" role="img" aria-label="AI-generated portrait illustration of a fictional Indian woman">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#704b78"/><stop offset="1" stop-color="#d29b80"/></linearGradient>
+    <linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#d9a07c"/><stop offset="1" stop-color="#a86d53"/></linearGradient>
+    <linearGradient id="fabric" x2="1" y2="1"><stop stop-color="#efc5a4"/><stop offset="1" stop-color="#cc8a78"/></linearGradient>
+  </defs>
+  <rect width="640" height="780" fill="url(#bg)"/>
+  <circle cx="504" cy="141" r="148" fill="#ffddb2" opacity=".16"/><circle cx="81" cy="642" r="181" fill="#d6c1ed" opacity=".12"/>
+  <path d="M95 780c17-163 90-262 225-262s208 99 225 262Z" fill="url(#fabric)"/>
+  <path d="M256 501h128v107c-20 37-43 55-64 55s-44-18-64-55Z" fill="url(#skin)"/>
+  <path d="M204 295c0-116 45-179 118-179 78 0 119 68 119 188v98c0 111-51 186-122 186s-115-76-115-187Z" fill="url(#skin)"/>
+  <path d="M195 388c-25-119-11-226 47-279 48-44 126-50 185-11 63 42 83 137 60 277-18-9-34-35-43-75-47-8-89-30-126-66-32 41-75 70-128 86-2 22 0 45 5 68Z" fill="#211923"/>
+  <path d="M207 366c-29-12-43 11-35 47 8 34 23 53 45 57m216-104c29-12 43 11 35 47-8 34-23 53-45 57" fill="url(#skin)"/>
+  <path d="M248 371c18-12 38-12 56-2m70 0c18-11 38-10 55 2" fill="none" stroke="#694337" stroke-width="8" stroke-linecap="round"/>
+  <ellipse cx="277" cy="394" rx="7" ry="10" fill="#211b1b"/><ellipse cx="389" cy="394" rx="7" ry="10" fill="#211b1b"/>
+  <path d="M333 395c-3 29-10 53-18 67 12 10 25 11 39 4" fill="none" stroke="#95614b" stroke-width="7" stroke-linecap="round"/>
+  <path d="M292 475c24 17 57 17 81-2" fill="none" stroke="#87494a" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="225" cy="461" r="9" fill="#e5b365"/><circle cx="419" cy="461" r="9" fill="#e5b365"/>
+  <path d="M266 532c21 39 39 61 54 67l-43 67-81-76Zm108 0c-21 39-39 61-54 67l43 67 81-76Z" fill="#f0d6c0"/>
+  <path d="M192 780c12-112 71-192 128-192s116 80 128 192" fill="#8c4260"/>
+  <path d="m285 603 35 43 35-43" fill="none" stroke="#e5b365" stroke-width="8"/>
+  <circle cx="320" cy="682" r="7" fill="#e5b365"/><circle cx="320" cy="710" r="5" fill="#e5b365"/>
+</svg>

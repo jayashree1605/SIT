@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Explore practical technology courses and guided learning at SIT — Success Info Technology.">
+  <title>SIT | Success Info Technology</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="top-progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="header">
+    <div class="wrap nav-wrap">
+      <a class="logo" href="#home" aria-label="SIT home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3.5 36 12.7v14.6L20 36.5 4 27.3V12.7L20 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m10 15.5 10-5.8 10 5.8-10 5.8-10-5.8Zm0 6 10 5.8 10-5.8" fill="none" stroke="#ffc83d" stroke-width="1.8" stroke-linejoin="round"/><circle cx="20" cy="15.5" r="2.2" fill="#ffc83d"/></svg><span class="logo-badge">SIT</span><span class="logo-word">SUCCESS INFO TECHNOLOGY</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li class="nav-courses"><button class="nav-course-toggle" id="courseMenuToggle" type="button" aria-expanded="false" aria-controls="courseMenu">Courses</button><div class="course-menu" id="courseMenu" hidden></div></li><li><a href="about.html">About</a></li><li><a href="#roadmap">SIT Roadmap</a></li><li><a href="#finder">Career Quiz</a></li><li><a href="#corporate-training">Corporate training</a></li><li class="nav-internships"><button class="nav-course-toggle nav-internship-toggle" id="internshipMenuToggle" type="button" aria-expanded="false" aria-controls="internshipMenu">Internships</button><div class="internship-nav-menu" id="internshipMenu" hidden><a href="#internship-mern">Web Development (MERN Stack)</a><a href="#internship-java">Java Full Stack Development</a><a href="#internship-data">Data Science &amp; Machine Learning</a><a href="#internship-ai">Artificial Intelligence (AI)</a><a href="#internship-cloud">Cloud Computing</a><a href="#internship-devops">DevOps Engineering</a><a href="#internship-security">Cyber Security</a></div></li><li><a href="#enquiry">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="search-trigger" id="openPalette" type="button" aria-label="Search courses and sections">⌕ Search <kbd>Ctrl K</kbd></button>
+        <a class="btn btn-yellow" href="#enquiry">Free Guidance <span aria-hidden="true">↗</span></a>
+      </div>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="wrap">
+       <div class="hero-layout">
+        <div class="hero-copy">
+          <div class="hero-kicker"><i class="live-dot" aria-hidden="true"></i> Learn with direction. Build with confidence.</div>
+          <h1 id="heroTitle">Build Skills for <span class="role-line">What Comes Next.</span></h1>
+          <p>Explore career-focused programs, gain practical experience and build the skills to move confidently towards your future.</p>
+          <div class="hero-buttons"><a class="btn btn-yellow" href="#courses">Explore Courses <span aria-hidden="true">↓</span></a><a class="btn btn-line" href="#finder">Discover Your Career Path <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="hero-guidance">
+          <form class="enquiry-card hero-enquiry-card" id="heroEnquiryForm">
+            <h2>Get free guidance</h2><p>A no-pressure course conversation.</p>
+            <div class="field"><label for="heroStudentName">Your name</label><input id="heroStudentName" name="name" autocomplete="name" placeholder="e.g. Alex Morgan" required></div>
+            <div class="field"><label for="heroStudentPhone">Phone number</label><input id="heroStudentPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your best contact number" minlength="7" maxlength="20" required></div>
+            <div class="field"><label for="heroCourseSelect">I’m interested in</label><select id="heroCourseSelect" name="course" required><option value="">Choose a course</option><option value="Corporate training enquiry">Corporate training enquiry</option><option value="Internship opportunities">Internship opportunities</option><option value="Internship: Web Development (MERN Stack)">Internship: Web Development (MERN Stack)</option><option value="Internship: Java Full Stack Development">Internship: Java Full Stack Development</option><option value="Internship: Data Science &amp; Machine Learning">Internship: Data Science &amp; Machine Learning</option><option value="Internship: Artificial Intelligence (AI)">Internship: Artificial Intelligence (AI)</option><option value="Internship: Cloud Computing">Internship: Cloud Computing</option><option value="Internship: DevOps Engineering">Internship: DevOps Engineering</option><option value="Internship: Cyber Security">Internship: Cyber Security</option></select></div>
+            <button class="btn btn-yellow" type="submit">Request free guidance <span aria-hidden="true">→</span></button>
+            <p class="form-note" id="heroFormMessage" role="status">Your details will be used to respond to your enquiry.</p>
+          </form>
+        </div>
+       </div>
+       <div class="stats-row" aria-label="SIT course and learner highlights">
+         <article class="stat-pill"><strong>24+</strong><div class="stat-copy"><h2>Career-Focused Courses</h2></div></article>
+         <article class="stat-pill"><strong>12+</strong><div class="stat-copy"><h2>Years of Institutional Experience</h2></div></article>
+         <article class="stat-pill"><strong>4:1</strong><div class="stat-copy"><h2>Mentor Access</h2></div></article>
+       </div>
+      </div>
+    </section>
+
+    <div class="tech-strip" aria-label="Technologies covered in our courses"><div class="tech-track" id="techTrack"></div></div>
+
+    <section class="section section-light" id="courses" aria-labelledby="coursesTitle">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">Choose your direction</p><h2 id="coursesTitle">Explore top courses for <span>high-demand careers</span> in 2026.</h2><p>Explore in-demand skills and prepare for your next career opportunity.</p></div>
+        <div class="course-tools">
+          <div class="filters" id="courseFilters" role="group" aria-label="Filter courses"></div>
+          <div class="course-control-row">
+            <p class="course-result-count" id="courseResultCount" aria-live="polite"></p>
+            <label class="sr-only" for="courseSort">Sort courses</label>
+            <select class="course-sort" id="courseSort"><option value="featured">Featured</option><option value="title">Title: A to Z</option><option value="shortest">Shortest first</option><option value="longest">Longest first</option></select>
+            <label class="sr-only" for="courseSearch">Search courses</label>
+            <input class="course-search" id="courseSearch" type="search" placeholder="Search courses, tools or skills">
+          </div>
+        </div>
+        <div class="course-grid" id="courseGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="finder" aria-labelledby="finderTitle">
+      <div class="wrap finder-layout">
+        <div class="section-head"><p class="eyebrow">Career Quiz</p><h2 id="finderTitle">Find the Career Path That Fits You.</h2><p>Discover learning paths aligned with your interests, strengths and goals.</p><a class="btn btn-yellow finder-cta" href="#quizPanel">Take the Career Quiz <span aria-hidden="true">↓</span></a></div>
+        <div class="quiz-panel" id="quizPanel">
+          <div id="quizQuestions"><div class="quiz-top"><span id="quizStepLabel">Question 1 of 8</span><span id="quizProgressText">0%</span></div><div class="quiz-progress"><span id="quizProgress"></span></div><div id="quizContent" class="quiz-content"><h3 id="quizQuestion" aria-live="polite"></h3><div class="quiz-options" id="quizOptions"></div></div><div class="quiz-navigation"><span>Choose the answer that feels most like you.</span><button class="quiz-back" id="quizBack" type="button" hidden>← Back</button></div></div>
+          <div class="quiz-result" id="quizResult" aria-live="polite"><p class="eyebrow">Your starting shortlist</p><h3>Courses to explore</h3><div id="quizMatches"></div><div class="quiz-result-actions"><button class="btn btn-yellow" id="syllabusButton" type="button">View syllabus</button><button class="btn btn-line" id="restartQuiz" type="button">Start again</button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light corporate-training-section" id="corporate-training" aria-labelledby="corporateTrainingTitle">
+      <div class="wrap corporate-training-layout">
+        <div class="corporate-training-copy">
+          <p class="eyebrow">Learning for teams</p>
+          <h2 id="corporateTrainingTitle">Corporate programs, shaped around your training needs.</h2>
+          <p>Build a learning plan around your team’s goals, current skill levels and preferred delivery format. Discuss relevant technology topics, practical exercises and a training schedule with SIT.</p>
+          <ul class="corporate-training-points">
+            <li><span aria-hidden="true">01</span><div><strong>Start with your goals</strong><p>Share the roles, skills and outcomes your team wants to focus on.</p></div></li>
+            <li><span aria-hidden="true">02</span><div><strong>Plan a relevant program</strong><p>Discuss course topics, learning activities and a suitable pace.</p></div></li>
+            <li><span aria-hidden="true">03</span><div><strong>Choose a delivery approach</strong><p>Ask about available online or classroom options for your team.</p></div></li>
+          </ul>
+          <a class="btn btn-dark" href="#enquiry" data-corporate-enquiry>Discuss team training <span aria-hidden="true">↗</span></a>
+          <p class="corporate-training-note">Program scope, schedules, delivery modes and availability are confirmed during a training-needs discussion.</p>
+        </div>
+        <div class="corporate-training-visual" aria-label="Illustrative photos of team learning and collaboration">
+          <figure class="corporate-photo corporate-photo-main"><img src="images/learning-classroom.jpg" alt="Representative photo of a group learning together in a classroom"><figcaption>Learn together</figcaption></figure>
+          <figure class="corporate-photo corporate-photo-side"><img src="images/learning-collaboration.jpg" alt="Representative photo of colleagues collaborating around a laptop"><figcaption>Work on practical skills</figcaption></figure>
+          <figure class="corporate-photo corporate-photo-small"><img src="images/learning-computing.jpg" alt="Representative photo of learners working at computers"><figcaption>Build team capability</figcaption></figure>
+          <span class="corporate-orbit corporate-orbit-one" aria-hidden="true"></span><span class="corporate-orbit corporate-orbit-two" aria-hidden="true"></span>
+          <p class="corporate-photo-note">Representative stock photos; not verified SIT corporate training sessions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="roadmap" aria-labelledby="roadmapTitle">
+      <div class="wrap">
+        <div class="section-head"><p class="eyebrow">SIT Roadmap</p><h2 id="roadmapTitle">A clear path from curiosity to capability.</h2><p>Discover what fits, learn the essentials, practise with purpose, build a portfolio and prepare for your next move.</p></div>
+        <div class="roadmap" id="roadmapSteps"><div class="roadmap-fill" id="roadmapFill"></div></div>
+      </div>
+    </section>
+
+    <section class="section section-light mentor-guidance-section" id="mentors" aria-labelledby="mentorsTitle">
+      <div class="wrap mentor-guidance-layout">
+        <div class="mentor-guidance-copy">
+          <p class="eyebrow">Guidance as you learn</p>
+          <h2 id="mentorsTitle">Learn with support along the way.</h2>
+          <p>Mentors can help clarify course concepts, offer feedback as you practise, and help you consider your next learning steps. The kind of support and its availability can vary by course and batch.</p>
+          <ul class="mentor-support-list">
+            <li class="mentor-support-point"><span aria-hidden="true">01</span><div><strong>Understand new ideas</strong><p>Talk through questions as you work through course topics.</p></div></li>
+            <li class="mentor-support-point"><span aria-hidden="true">02</span><div><strong>Improve through feedback</strong><p>Use feedback to refine exercises and project work.</p></div></li>
+            <li class="mentor-support-point"><span aria-hidden="true">03</span><div><strong>Plan what comes next</strong><p>Explore relevant courses and next steps for your goals.</p></div></li>
+          </ul>
+          <a class="btn btn-dark" href="#enquiry">Ask about learner support <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="mentor-teaching-visual">
+          <figure class="mentor-teaching-main"><img src="images/learning-classroom.jpg" alt="Representative stock photo of learners collaborating in a classroom setting"><figcaption>Learning through guided practice</figcaption></figure>
+          <figure class="mentor-teaching-inset"><img src="images/learning-computing.jpg" alt="Representative stock photo of learners discussing work at a laptop"><figcaption>Questions, practice and feedback</figcaption></figure>
+          <p class="mentor-image-note">Representative learning photos; they do not depict verified SIT faculty or facilities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light addon-benefits-section" id="add-on-benefits" aria-labelledby="benefitsTitle">
+      <div class="wrap">
+        <div class="benefits-intro">
+          <p class="eyebrow">More than lessons</p>
+          <h2 id="benefitsTitle">Extra support for your next steps.</h2>
+          <p>Depending on the course and what is available in your batch, you may be able to explore additional learning and career-readiness support.</p>
+        </div>
+        <div class="addon-benefits-grid">
+          <article class="addon-benefit-card"><span class="benefit-icon" aria-hidden="true">01</span><h3>Project feedback</h3><p>Get guidance to review your practice work and improve how you approach a project.</p></article>
+          <article class="addon-benefit-card"><span class="benefit-icon" aria-hidden="true">02</span><h3>Portfolio guidance</h3><p>Learn how to describe your project, your role and the decisions behind your work.</p></article>
+          <article class="addon-benefit-card"><span class="benefit-icon" aria-hidden="true">03</span><h3>Interview practice</h3><p>Practise explaining your skills and projects as part of your career preparation.</p></article>
+          <article class="addon-benefit-card"><span class="benefit-icon" aria-hidden="true">04</span><h3>Career planning</h3><p>Explore possible next steps that connect your interests with the skills you are learning.</p></article>
+          <article class="addon-benefit-card"><span class="benefit-icon" aria-hidden="true">05</span><h3>Learning roadmap</h3><p>Use a clear sequence of foundations, guided projects and a capstone to organise your learning.</p></article>
+          <article class="addon-benefit-card"><span class="benefit-icon" aria-hidden="true">06</span><h3>Internship exploration</h3><p>Ask about relevant opportunities; availability, eligibility and selection may vary.</p></article>
+        </div>
+        <p class="benefits-note">Support varies by course and batch. Internship opportunities and employment are not guaranteed; confirm current details with SIT.</p>
+      </div>
+    </section>
+
+    <section class="section section-light progress-section" id="why" aria-labelledby="whyTitle">
+      <div class="wrap">
+        <div class="progress-intro">
+          <div><p class="eyebrow">Why SIT</p><h2 id="whyTitle">Learn by doing. Grow with direction.</h2></div>
+          <div class="progress-intro-copy"><p>Build useful skills through applied learning, guidance and projects that help you explain what you can do.</p><a class="text-link" href="#roadmap">Explore the SIT roadmap <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <div class="progress-steps" aria-label="Four steps in the learning journey">
+          <article class="progress-card"><div class="progress-card-top"><span class="progress-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M9 12.5c6-2.5 11-1.5 15 2v24c-4-3.5-9-4.5-15-2Zm30 0c-6-2.5-11-1.5-15 2v24c4-3.5 9-4.5 15-2Z"/><path d="M14 19h5m-5 6h5m10-6h5m-5 6h5"/></svg></span><span class="progress-number">01</span></div><p class="progress-label">PRACTICAL LEARNING</p><h3>Learn through real practice.</h3><p>Put course concepts to work through exercises and projects as you learn.</p></article>
+          <article class="progress-card"><div class="progress-card-top"><span class="progress-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 10h32v23H8zM17 40h14m-7-7v7"/><path d="m17 23 5 5 10-11"/></svg></span><span class="progress-number">02</span></div><p class="progress-label">MENTOR GUIDANCE</p><h3>Get support as you grow.</h3><p>Ask questions, receive feedback and work through new ideas with guidance.</p></article>
+          <article class="progress-card"><div class="progress-card-top"><span class="progress-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M8 38h32M12 34V24h7v10m5 0V15h7v19m5 0V9h7v25"/><path d="m11 17 9-7 8 3 10-7"/></svg></span><span class="progress-number">03</span></div><p class="progress-label">CURRENT TOOLS</p><h3>Explore industry-relevant tools.</h3><p>Work with technologies connected to each course’s focus and module outline.</p></article>
+          <article class="progress-card"><div class="progress-card-top"><span class="progress-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><path d="m30 18-4 9-9 4 4-9Zm-6-16v5m0 34v5M2 24h5m34 0h5"/></svg></span><span class="progress-number">04</span></div><p class="progress-label">CAREER PREPARATION</p><h3>Prepare to share your work.</h3><p>Build a portfolio story and practise describing your skills and projects.</p></article>
+        </div>
+        <div class="progress-cta"><div><span class="progress-cta-label">YOUR LEARNING JOURNEY</span><h3>Skills, projects and preparation.</h3><p>Explore your interests and choose a starting point that feels right.</p></div><a class="btn btn-yellow" href="#courses">Explore courses <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="section section-dark internship-section" id="internships" aria-labelledby="internshipsTitle">
+      <div class="wrap">
+        <div class="internship-heading">
+          <p class="internship-kicker">INTERNSHIP PATHWAYS</p>
+          <h2 id="internshipsTitle">Turn what you learn into <span>what you can do.</span></h2>
+          <p>Explore technology pathways, practise skills through project-based work, and ask our team about internship opportunities related to your interests.</p>
+          <ul class="internship-highlights" aria-label="What to explore in an internship pathway">
+            <li><span aria-hidden="true">✦</span> Practical project experience</li>
+            <li><span aria-hidden="true">✦</span> Industry-focused technology areas</li>
+            <li><span aria-hidden="true">✦</span> Guidance on possible next steps</li>
+          </ul>
+        </div>
+        <div class="internship-course-grid">
+          <article class="internship-course-card" id="internship-mern"><div class="internship-course-content"><span class="internship-topic">Web development</span><h3>Web Development (MERN Stack)</h3><p>Build responsive web experiences and explore the tools behind modern full-stack applications.</p><div class="internship-tags" aria-label="Topics"><span>Frontend</span><span>Backend</span><span>Full stack</span></div><button type="button" data-internship-course="Internship: Web Development (MERN Stack)">Explore pathway <span aria-hidden="true">↗</span></button></div></article>
+          <article class="internship-course-card" id="internship-java"><div class="internship-course-content"><span class="internship-topic">Software development</span><h3>Java Full Stack Development</h3><p>Explore Java application development, backend logic, databases, and connected web interfaces.</p><div class="internship-tags" aria-label="Topics"><span>Java</span><span>Backend</span><span>Databases</span></div><button type="button" data-internship-course="Internship: Java Full Stack Development">Explore pathway <span aria-hidden="true">↗</span></button></div></article>
+          <article class="internship-course-card" id="internship-data"><div class="internship-course-content"><span class="internship-topic">AI &amp; data</span><h3>Data Science &amp; Machine Learning</h3><p>Work with data workflows, analytical thinking, and machine-learning concepts.</p><div class="internship-tags" aria-label="Topics"><span>Data workflows</span><span>Analytics</span><span>Machine learning</span></div><button type="button" data-internship-course="Internship: Data Science &amp; Machine Learning">Explore pathway <span aria-hidden="true">↗</span></button></div></article>
+          <article class="internship-course-card" id="internship-ai"><div class="internship-course-content"><span class="internship-topic">AI &amp; data</span><h3>Artificial Intelligence (AI)</h3><p>Discover AI concepts and how intelligent systems can be applied to real-world problems.</p><div class="internship-tags" aria-label="Topics"><span>AI concepts</span><span>Intelligent systems</span></div><button type="button" data-internship-course="Internship: Artificial Intelligence (AI)">Explore pathway <span aria-hidden="true">↗</span></button></div></article>
+          <article class="internship-course-card" id="internship-cloud"><div class="internship-course-content"><span class="internship-topic">Cloud &amp; infrastructure</span><h3>Cloud Computing</h3><p>Learn about cloud platforms, infrastructure, and the services that power digital products.</p><div class="internship-tags" aria-label="Topics"><span>Cloud platforms</span><span>Infrastructure</span></div><button type="button" data-internship-course="Internship: Cloud Computing">Explore pathway <span aria-hidden="true">↗</span></button></div></article>
+          <article class="internship-course-card" id="internship-devops"><div class="internship-course-content"><span class="internship-topic">Cloud &amp; automation</span><h3>DevOps Engineering</h3><p>Explore automation, delivery workflows, and practices that connect development with operations.</p><div class="internship-tags" aria-label="Topics"><span>Automation</span><span>Delivery workflows</span></div><button type="button" data-internship-course="Internship: DevOps Engineering">Explore pathway <span aria-hidden="true">↗</span></button></div></article>
+          <article class="internship-course-card" id="internship-security"><div class="internship-course-content"><span class="internship-topic">Security</span><h3>Cyber Security</h3><p>Explore security fundamentals, threat awareness, and ways to protect digital systems.</p><div class="internship-tags" aria-label="Topics"><span>Security basics</span><span>Threat awareness</span></div><button type="button" data-internship-course="Internship: Cyber Security">Explore pathway <span aria-hidden="true">↗</span></button></div></article>
+        </div>
+        <p class="internship-note">These pathway titles are based on the linked reference. Current availability, eligibility, and selection should be confirmed with SIT; internship and job placement are not guaranteed.</p>
+      </div>
+    </section>
+
+    <section class="section section-dark testimonial-section" id="stories" aria-labelledby="storiesTitle">
+      <div class="wrap"><div class="section-head"><p class="eyebrow">Learner testimonials</p><h2 id="storiesTitle">A learning journey, in their words.</h2><p>Review-style sample cards with fictional Tamil names. These are illustrative examples, not actual learner feedback or verified Google reviews.</p></div>
+        <div class="story-layout"><article class="story-testimonial" aria-live="polite"><div class="story-review-top"><span class="story-review-mark" aria-hidden="true">S</span><span class="story-review-label">SAMPLE REVIEW</span></div><div class="story-review-meta"><span class="story-person-mark" id="storyPersonMark" aria-hidden="true">A</span><div><strong class="story-person-name" id="storyPersonName">Arun Kumar</strong><span class="story-attribution" id="storyAttribution">Illustrative learner name</span></div></div><p class="story-course-label">COURSE</p><h3 class="story-course" id="storyCourse">Data Analytics</h3><blockquote id="storyText"></blockquote><div class="story-controls"><button class="icon-btn" id="storyPrev" type="button" aria-label="Previous sample review">←</button><button class="icon-btn" id="storyNext" type="button" aria-label="Next sample review">→</button></div></article></div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="faq" aria-labelledby="faqTitle">
+      <div class="wrap"><div class="section-head"><p class="eyebrow">Good to know</p><h2 id="faqTitle">Questions, answered.</h2></div><div class="faq-list">
+        <details class="faq-item"><summary>Do I need previous experience?</summary><p>Most courses welcome motivated beginners. Some advanced paths recommend foundational knowledge; a guidance call can help you choose the right starting point.</p></details>
+        <details class="faq-item"><summary>How are classes delivered?</summary><p>Available delivery formats and schedules vary. Contact SIT to ask about the current options for a course or team-training program.</p></details>
+        <details class="faq-item"><summary>What will I build during a course?</summary><p>You’ll complete guided exercises and a capstone that brings core skills together. The exact projects vary by course and cohort.</p></details>
+        <details class="faq-item"><summary>Are internships or job placements guaranteed?</summary><p>No. Internship opportunities depend on availability, course relevance, eligibility and selection. Career support can help with portfolio reviews, interview practice and planning, but internships and employment are not guaranteed.</p></details>
+        <details class="faq-item"><summary>Can I talk to someone before enrolling?</summary><p>Yes. Submit the short form and the admissions team can help compare courses, formats and starting dates.</p></details>
+      </div></div>
+    </section>
+
+    <section class="closing"><div class="wrap closing-inner"><div><h2>Your next chapter starts with a question.</h2><p>Tell us where you want to go. We’ll help you explore the steps.</p></div><a class="btn btn-yellow" href="#enquiry">Get free guidance <span aria-hidden="true">↗</span></a></div></section>
+    <section class="section section-light contact-section" id="enquiry" aria-labelledby="enquiryTitle">
+      <div class="wrap contact-layout">
+        <div class="contact-copy"><p class="eyebrow">Start a conversation</p><h2 id="enquiryTitle">Let’s find your path.</h2><p>Share what you’re interested in and the SIT team can help you explore course options and next steps.</p><div class="contact-assurance"><span aria-hidden="true">✦</span> No commitment. Ask questions before you decide.</div></div>
+        <div class="form-stage">
+          <form class="enquiry-card" id="enquiryForm">
+            <h2>Get free guidance</h2><p>A no-pressure course conversation.</p>
+            <div class="field"><label for="studentName">Your name</label><input id="studentName" name="name" autocomplete="name" placeholder="e.g. Alex Morgan" required></div>
+            <div class="field"><label for="studentPhone">Phone number</label><input id="studentPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your best contact number" minlength="7" maxlength="20" required></div>
+            <div class="field"><label for="courseSelect">I’m interested in</label><select id="courseSelect" name="course" required><option value="">Choose a course</option><option value="Corporate training enquiry">Corporate training enquiry</option><option value="Internship opportunities">Internship opportunities</option><option value="Internship: Web Development (MERN Stack)">Internship: Web Development (MERN Stack)</option><option value="Internship: Java Full Stack Development">Internship: Java Full Stack Development</option><option value="Internship: Data Science &amp; Machine Learning">Internship: Data Science &amp; Machine Learning</option><option value="Internship: Artificial Intelligence (AI)">Internship: Artificial Intelligence (AI)</option><option value="Internship: Cloud Computing">Internship: Cloud Computing</option><option value="Internship: DevOps Engineering">Internship: DevOps Engineering</option><option value="Internship: Cyber Security">Internship: Cyber Security</option></select></div>
+            <button class="btn btn-yellow" type="submit">Request free guidance <span aria-hidden="true">→</span></button>
+            <p class="form-note" id="formMessage" role="status">Your details will be used to respond to your enquiry.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap"><div class="footer-grid">
+      <div class="footer-about"><a class="logo" href="#home" aria-label="SIT home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3.5 36 12.7v14.6L20 36.5 4 27.3V12.7L20 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m10 15.5 10-5.8 10 5.8-10 5.8-10-5.8Zm0 6 10 5.8 10-5.8" fill="none" stroke="#ffc83d" stroke-width="1.8" stroke-linejoin="round"/><circle cx="20" cy="15.5" r="2.2" fill="#ffc83d"/></svg><span class="logo-badge">SIT</span><span class="logo-word">SUCCESS INFO TECHNOLOGY</span></a><p>Practical technology education for people ready to make their next move.</p></div>
+      <div class="footer-col"><h3>Explore</h3><a href="#courses">Courses</a><a href="#finder">Course finder</a><a href="#corporate-training">Corporate training</a><a href="#internships">Internships</a></div>
+      <div class="footer-col"><h3>SIT</h3><a href="about.html">About SIT</a><a href="#mentors">Mentors</a><a href="#roadmap">Learning roadmap</a><a href="#enquiry">Career support</a><a href="#faq">FAQs</a></div>
+      <div class="footer-col"><h3>Visit us · placeholder addresses</h3><address>North Studio (placeholder)<br>24 Learning Lane, Central District<br>Mon–Sat, 9:00–18:00</address><address>Riverside Lab (placeholder)<br>8 Foundry Walk, Riverside Quarter<br>Mon–Sat, 9:00–18:00</address></div>
+    </div><div class="footer-bottom"><span>© <span id="yearNow"></span> SIT · Success Info Technology.</span><span>Mentors, stats, stories and addresses are illustrative placeholders.</span></div></div>
+  </footer>
+  <button class="floating-enquire" id="floatingEnquire" type="button" aria-label="Go to free guidance form" title="Free guidance">✳</button><button class="back-top" id="backTop" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+  <dialog id="courseDialog" aria-labelledby="dialogCourseTitle"><div class="dialog-head"><strong>SIT · COURSE OVERVIEW</strong><button class="dialog-close" type="button" data-close="courseDialog" aria-label="Close course details">×</button></div><div class="course-dialog-art" id="dialogArt"></div><div class="dialog-content"><p class="eyebrow" id="dialogCategory"></p><h2 id="dialogCourseTitle"></h2><p id="dialogDescription"></p><div class="syllabus-heading"><h3>Course syllabus</h3><p>Illustrative module outline; content may vary by course delivery.</p></div><div class="module-list" id="moduleList"></div><section class="course-knowledge-check" aria-labelledby="courseQuizTitle"><div class="course-quiz-heading"><div><p class="eyebrow">Check your starting point</p><h3 id="courseQuizTitle">How well do you know this course?</h3></div><span class="course-quiz-count">5 questions</span></div><p class="course-quiz-intro">Try a short knowledge check. Your score is just for practice and will not affect course access.</p><div id="courseQuizContent" aria-live="polite"></div></section><button class="btn btn-dark" id="dialogEnquire" type="button">Enquire about this course <span aria-hidden="true">↗</span></button></div></dialog>
+  <dialog class="palette" id="commandDialog" aria-label="Search courses and sections"><label class="sr-only" for="paletteInput">Search all courses and sections</label><input id="paletteInput" type="search" placeholder="Search courses and sections..." autocomplete="off"><div class="palette-list" id="paletteList" role="listbox"></div><div class="palette-hint">↑↓ to navigate · Enter to open · Esc to close</div></dialog>
+
+  <script src="script.js" defer></script>
+  <script src="motion.js" defer></script>
+</body>
+</html>

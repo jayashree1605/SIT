@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="AI-generated portrait illustration of a cloud and security mentor">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#235d68"/><stop offset="1" stop-color="#83a99d"/></linearGradient>
+    <linearGradient id="shirt" x2="1" y2="1"><stop stop-color="#e6edf0"/><stop offset="1" stop-color="#96b8b8"/></linearGradient>
+    <linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#e1ab83"/><stop offset="1" stop-color="#b97758"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <circle cx="525" cy="102" r="132" fill="#e0f3c8" opacity=".14"/><circle cx="82" cy="380" r="157" fill="#f4d38a" opacity=".12"/>
+  <path d="M143 480c19-100 81-153 177-153s157 53 177 153" fill="url(#shirt)"/>
+  <path d="M264 326h112v68c-16 28-35 42-56 42s-40-14-56-42Z" fill="url(#skin)"/>
+  <path d="M232 174c0-78 35-117 90-117 61 0 94 44 94 121v59c0 70-41 119-94 119s-90-50-90-122Z" fill="url(#skin)"/>
+  <path d="M227 198c-15-63-6-121 26-154 26-28 70-40 108-24 43 17 67 57 62 123-2 23-8 42-16 58-2-38-12-71-29-96-28 22-72 38-128 41-4 19-12 36-23 52Z" fill="#292b28"/>
+  <path d="M230 196c-21-5-31 10-26 33 5 21 14 35 30 38m181-71c20-4 29 11 24 33-5 20-14 34-29 37" fill="url(#skin)"/>
+  <path d="M260 216c12-7 25-7 37-1m53 0c12-7 25-6 37 1" fill="none" stroke="#624238" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="279" cy="233" rx="5.5" ry="7" fill="#272323"/><ellipse cx="367" cy="233" rx="5.5" ry="7" fill="#272323"/>
+  <path d="M323 234c-2 18-7 34-12 44 8 6 17 7 25 2" fill="none" stroke="#aa6c52" stroke-width="5" stroke-linecap="round"/>
+  <path d="M295 295c17 11 39 11 56-1" fill="none" stroke="#8b4f43" stroke-width="6" stroke-linecap="round"/>
+  <path d="M252 387c20 29 45 43 68 43s49-14 69-43l33 93H219Z" fill="#234a56"/>
+  <path d="m286 330 38 49 39-49" fill="#eef6f4"/><path d="m307 361 17 18 17-18" fill="none" stroke="#4f8790" stroke-width="5"/>
+</svg>

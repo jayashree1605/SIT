@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="AI-generated portrait illustration of a product design mentor">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#714f88"/><stop offset="1" stop-color="#d39b8c"/></linearGradient>
+    <linearGradient id="shirt" x2="1" y2="1"><stop stop-color="#f1c4a6"/><stop offset="1" stop-color="#c58e79"/></linearGradient>
+    <linearGradient id="skin" x2=".8" y2="1"><stop stop-color="#f1c6a9"/><stop offset="1" stop-color="#c88770"/></linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#bg)"/>
+  <circle cx="112" cy="102" r="123" fill="#fbe2c0" opacity=".15"/><circle cx="541" cy="386" r="171" fill="#d7c4fa" opacity=".15"/>
+  <path d="M142 480c20-101 81-153 178-153s158 52 178 153" fill="url(#shirt)"/>
+  <path d="M264 325h112v71c-17 29-36 43-56 43s-39-14-56-43Z" fill="url(#skin)"/>
+  <path d="M232 176c0-78 35-119 90-119 61 0 95 44 95 122v59c0 70-42 119-95 119s-90-50-90-122Z" fill="url(#skin)"/>
+  <path d="M222 196c-19-82 5-143 61-164 48-18 98 1 119 44 19 40 17 90 1 132-10-23-15-51-15-83-36 29-87 45-155 42-2 11-5 21-11 29Z" fill="#29212d"/>
+  <path d="M229 196c-21-5-31 10-26 33 5 21 14 35 30 38m182-71c20-4 29 11 24 33-5 20-14 34-30 37" fill="url(#skin)"/>
+  <path d="M259 215c12-7 25-7 37-1m54 0c12-7 25-6 37 1" fill="none" stroke="#68463e" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="278" cy="233" rx="5.5" ry="7" fill="#30252a"/><ellipse cx="368" cy="233" rx="5.5" ry="7" fill="#30252a"/>
+  <path d="M323 233c-2 18-7 35-12 45 8 6 17 7 26 2" fill="none" stroke="#b87764" stroke-width="5" stroke-linecap="round"/>
+  <path d="M295 295c17 12 40 12 57-1" fill="none" stroke="#965958" stroke-width="6" stroke-linecap="round"/>
+  <path d="M252 387c20 29 45 43 68 43s49-14 69-43l34 93H218Z" fill="#584778"/>
+  <path d="m285 328 35 45 36-45" fill="none" stroke="#f7e4d7" stroke-width="7"/><circle cx="320" cy="384" r="5" fill="#ffc83d"/>
+</svg>
