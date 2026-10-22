@@ -1,14 +1,14 @@
 "use strict";
     const courses = [
-      { id:"data-science", title:"Data Science with AI", category:"AI & Data", duration:"24 weeks", level:"Beginner friendly", art:"chart", visualTags:["Python","Machine learning"], description:"Turn raw data into useful questions, models and clear explanations. Build a foundation in analysis and applied machine learning.", modules:["Python and data foundations","Exploratory analysis and visualisation","Machine learning workflows","Capstone: an end-to-end model"] },
-      { id:"data-analytics", title:"Data Analytics", category:"AI & Data", duration:"16 weeks", level:"Start with the basics", art:"pie", visualTags:["SQL","Dashboards"], description:"Learn to find patterns, communicate metrics and support better decisions with practical analysis workflows.", modules:["Spreadsheets and data quality","SQL for everyday questions","Dashboards and visual storytelling","Capstone: an insight report"] },
-      { id:"generative-ai", title:"Generative AI", category:"AI & Data", duration:"12 weeks", level:"No coding required", art:"neural", visualTags:["Prompt design","AI workflows"], description:"Explore generative AI tools and concepts, then prototype responsible workflows for real tasks.", modules:["How generative models work","Prompt design and evaluation","AI workflow prototyping","Capstone: a useful assistant"] },
-      { id:"full-stack", title:"Full Stack Development", category:"Development", duration:"24 weeks", level:"Beginner friendly", art:"browser", visualTags:["JavaScript","APIs · UI"], description:"Build responsive web experiences and the services behind them, with a focus on clean fundamentals.", modules:["HTML, CSS and interface craft","JavaScript and modern frontend","APIs, databases and backend","Capstone: a deployed web app"] },
-      { id:"cloud-aws", title:"Cloud with AWS", category:"Cloud & DevOps", duration:"14 weeks", level:"Some IT familiarity", art:"cloud", visualTags:["AWS","Cloud services"], description:"Understand core cloud services and practice designing, securing and operating simple cloud workloads.", modules:["Cloud concepts and IAM","Compute, storage and networking","Monitoring and security","Capstone: a cloud architecture"] },
-      { id:"devops", title:"DevOps Engineering", category:"Cloud & DevOps", duration:"18 weeks", level:"Some IT familiarity", art:"infinity", visualTags:["CI/CD","Containers"], description:"Connect development and operations through automation, repeatable delivery and observable systems.", modules:["Linux, Git and collaboration","CI/CD pipelines","Containers and orchestration","Capstone: automated delivery"] },
-      { id:"cyber-security", title:"Cyber Security", category:"Cloud & DevOps", duration:"16 weeks", level:"Foundational IT", art:"shield", visualTags:["Threat analysis","Defense"], description:"Develop a defensive mindset and learn core security practices through controlled lab exercises.", modules:["Security concepts and threat models","Network and system fundamentals","Detection and incident response","Capstone: a security assessment"] },
-      { id:"ui-ux", title:"UI/UX Design", category:"Design", duration:"12 weeks", level:"No experience needed", art:"wireframe", visualTags:["User research","Prototyping"], description:"Research user needs, shape interfaces and test design decisions with thoughtful prototypes.", modules:["Research and problem framing","Information architecture","Interface systems and prototyping","Capstone: a tested product flow"] },
-      { id:"digital-marketing", title:"Digital Marketing", category:"Marketing", duration:"12 weeks", level:"No experience needed", art:"chart", visualTags:["SEO","Campaign analytics"], description:"Plan digital campaigns, reach the right audiences and measure what works across search, social and content.", modules:["Audience research and marketing strategy","Content and social media campaigns","Search and paid advertising fundamentals","Capstone: a measurable campaign plan"] }
+      { id:"data-science", title:"Data Science with AI", category:"AI & Data", duration:"3–4 Months", level:"Beginner friendly", art:"chart", visualTags:["Python","Machine learning"], preview:["Python Programming","Statistics & Data Analysis","Machine Learning","Model Evaluation & Projects"], description:"Turn raw data into useful questions, models and clear explanations. Build a foundation in analysis and applied machine learning.", modules:["Python and data foundations","Exploratory analysis and visualisation","Machine learning workflows","Capstone: an end-to-end model"] },
+      { id:"data-analytics", title:"Data Analytics", category:"AI & Data", duration:"3–4 Months", level:"Start with the basics", art:"pie", visualTags:["SQL","Dashboards"], preview:["SQL & Database Queries","Excel & Data Cleaning","Power BI & Dashboards","Business Insights & Reporting"], description:"Learn to find patterns, communicate metrics and support better decisions with practical analysis workflows.", modules:["Spreadsheets and data quality","SQL for everyday questions","Dashboards and visual storytelling","Capstone: an insight report"] },
+      { id:"generative-ai", title:"Generative AI", category:"AI & Data", duration:"3–4 Months", level:"No coding required", art:"neural", visualTags:["Prompt design","AI workflows"], preview:["Generative AI Fundamentals","Prompt Engineering","AI Tools & Applications","Responsible AI Workflows"], description:"Explore generative AI tools and concepts, then prototype responsible workflows for real tasks.", modules:["How generative models work","Prompt design and evaluation","AI workflow prototyping","Capstone: a useful assistant"] },
+      { id:"full-stack", title:"Full Stack Development", category:"Development", duration:"3–4 Months", level:"Beginner friendly", art:"browser", visualTags:["JavaScript","APIs · UI"], preview:["HTML, CSS & JavaScript","Frontend Development","Backend & REST APIs","Databases & Deployment"], description:"Build responsive web experiences and the services behind them, with a focus on clean fundamentals.", modules:["HTML, CSS and interface craft","JavaScript and modern frontend","APIs, databases and backend","Capstone: a deployed web app"] },
+      { id:"cloud-aws", title:"Cloud with AWS", category:"Cloud & DevOps", duration:"3–4 Months", level:"Some IT familiarity", art:"cloud", visualTags:["AWS","Cloud services"], preview:["Cloud Computing Fundamentals","AWS Core Services","IAM, VPC & Security","Hosting & Cloud Monitoring"], description:"Understand core cloud services and practice designing, securing and operating simple cloud workloads.", modules:["Cloud concepts and IAM","Compute, storage and networking","Monitoring and security","Capstone: a cloud architecture"] },
+      { id:"devops", title:"DevOps Engineering", category:"Cloud & DevOps", duration:"3–4 Months", level:"Some IT familiarity", art:"infinity", visualTags:["CI/CD","Containers"], preview:["Linux & Git","Docker & Containers","Jenkins & CI/CD Pipelines","Kubernetes & Terraform"], description:"Connect development and operations through automation, repeatable delivery and observable systems.", modules:["Linux, Git and collaboration","CI/CD pipelines","Containers and orchestration","Capstone: automated delivery"] },
+      { id:"cyber-security", title:"Cyber Security", category:"Cloud & DevOps", duration:"3–4 Months", level:"Foundational IT", art:"shield", visualTags:["Threat analysis","Defense"], preview:["Security Fundamentals","Networking & Threat Analysis","Vulnerability Assessment","Defensive Security Labs"], description:"Develop a defensive mindset and learn core security practices through controlled lab exercises.", modules:["Security concepts and threat models","Network and system fundamentals","Detection and incident response","Capstone: a security assessment"] },
+      { id:"ui-ux", title:"UI/UX Design", category:"Design", duration:"3–4 Months", level:"No experience needed", art:"wireframe", visualTags:["User research","Prototyping"], preview:["Design Principles","User Research & Personas","Wireframes & Prototypes","Usability Testing"], description:"Research user needs, shape interfaces and test design decisions with thoughtful prototypes.", modules:["Research and problem framing","Information architecture","Interface systems and prototyping","Capstone: a tested product flow"] },
+      { id:"digital-marketing", title:"Digital Marketing", category:"Marketing", duration:"3–4 Months", level:"No experience needed", art:"chart", visualTags:["SEO","Campaign analytics"], preview:["SEO & Search Marketing","Social Media Marketing","Content & Campaign Planning","Analytics & Performance Tracking"], description:"Plan digital campaigns, reach the right audiences and measure what works across search, social and content.", modules:["Audience research and marketing strategy","Content and social media campaigns","Search and paid advertising fundamentals","Capstone: a measurable campaign plan"] }
     ];
     const syllabusDetails = {
       "data-science": [
@@ -194,12 +194,8 @@
       ] }
     ];
     const techStack = ["PYTHON","JAVASCRIPT","AWS","FIGMA","SQL","DOCKER","REACT","GIT","MACHINE LEARNING","LINUX"];
+    const supportServices = ["APTITUDE CLASSES","SPOKEN ENGLISH","SOFT SKILLS TRAINING","RESUME BUILDING","MOCK INTERVIEWS","CAREER GUIDANCE","INTERNSHIP OPPORTUNITIES","HANDS-ON PROJECTS","INDUSTRY TOOLS TRAINING","PORTFOLIO DEVELOPMENT","TECH WORKSHOPS","CAREER PREPARATION","GITHUB GUIDANCE","PLACEMENT PREPARATION"];
     const courseCategories = ["All","AI & Data","Development","Cloud & DevOps","Design","Marketing"];
-    const stories = [
-      { name:"Arun Kumar", course:"Data Analytics", quote:"The weekly practice helped me understand how to clean data, ask better questions and explain what I found.", attribution:"Illustrative sample · Chennai" },
-      { name:"Priya", course:"Full Stack Development", quote:"Building a project step by step helped me connect the frontend, backend and the ideas behind them.", attribution:"Illustrative sample · Tamil Nadu" },
-      { name:"Karthik", course:"UI/UX Design", quote:"Practising user flows and prototypes gave me a clearer way to think through interface design decisions.", attribution:"Illustrative sample · Chennai" }
-    ];
     const $ = (selector, root=document) => root.querySelector(selector);
     const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
 
@@ -252,7 +248,7 @@
       if (sort === 'shortest') filtered.sort((a, b) => parseInt(a.duration, 10) - parseInt(b.duration, 10));
       if (sort === 'longest') filtered.sort((a, b) => parseInt(b.duration, 10) - parseInt(a.duration, 10));
       $('#courseResultCount').textContent = `Showing ${filtered.length} ${filtered.length === 1 ? 'course' : 'courses'}`;
-      $('#courseGrid').innerHTML = filtered.length ? filtered.map(course => `<article class="course-card" tabindex="0" role="button" aria-label="View ${course.title} course details" data-course="${course.id}"><div class="course-art" data-art="${course.art}" data-course-art="${course.id}">${illustration(course.art, course.id)}<div class="course-art-tags">${course.visualTags.map(tag=>`<span>${tag}</span>`).join('')}</div></div><div class="course-info"><div class="course-meta"><span>${course.category}</span><span>${course.duration}</span></div><div class="course-title-row"><span class="course-icon course-icon--${course.art}">${courseIcon(course.art)}</span><h3>${course.title}</h3></div><p>${course.description}</p><div class="course-foot"><span>${course.level}</span><strong>Explore course <i aria-hidden="true">↗</i></strong></div></div></article>`).join('') : '<div class="empty-state">No courses match that search. Try another keyword or category.</div>';
+      $('#courseGrid').innerHTML = filtered.length ? filtered.map(course => `<article class="course-card" tabindex="0" role="button" aria-label="View ${course.title} course details" data-course="${course.id}"><div class="course-art" data-art="${course.art}" data-course-art="${course.id}">${illustration(course.art, course.id)}<div class="course-syllabus" aria-label="Key syllabus for ${course.title}"><div class="course-syllabus-top"><span>KEY SYLLABUS</span><span>${course.duration}</span></div><h4>${course.title}</h4><ul>${course.preview.map(item => `<li>${item}</li>`).join('')}</ul></div></div><div class="course-info"><div class="course-meta"><span>${course.category}</span><span>${course.duration}</span></div><div class="course-title-row"><span class="course-icon course-icon--${course.art}">${courseIcon(course.art)}</span><h3>${course.title}</h3></div><p>${course.description}</p><div class="course-foot"><span>${course.level}</span><strong>Explore course <i aria-hidden="true">↗</i></strong></div></div></article>`).join('') : '<div class="empty-state">No courses match that search. Try another keyword or category.</div>';
       $$('.course-card').forEach(card => {
         card.addEventListener('click', () => openCourse(card.dataset.course));
         card.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openCourse(card.dataset.course); } });
@@ -332,17 +328,9 @@
       $('#syllabusButton').dataset.course = matched[0].id; $('#quizResult').classList.add('show');
     }
     function goToEnquiry(courseName='') {
-      const select = $('#courseSelect'); if (courseName) select.value = courseName;
-      $('#enquiry').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'center' });
-      window.setTimeout(() => $('#studentName').focus({ preventScroll:true }), 500);
-    }
-    function setupStories() {
-      let index = 0; let timer;
-      function showStory(next) { index = (next + stories.length) % stories.length; const story = stories[index]; $('#storyPersonMark').textContent = story.name.slice(0, 1); $('#storyPersonName').textContent = story.name; $('#storyCourse').textContent = story.course; $('#storyText').textContent = `“${story.quote}”`; $('#storyAttribution').textContent = story.attribution; }
-      function start() { clearInterval(timer); timer = setInterval(() => showStory(index + 1), 6500); }
-      $('#storyPrev').addEventListener('click', () => { showStory(index - 1); start(); }); $('#storyNext').addEventListener('click', () => { showStory(index + 1); start(); });
-      $('.story-layout').addEventListener('mouseenter', () => clearInterval(timer)); $('.story-layout').addEventListener('mouseleave', start); $('.story-layout').addEventListener('focusin', () => clearInterval(timer)); $('.story-layout').addEventListener('focusout', start);
-      showStory(0); start();
+      const select = $('#heroCourseSelect'); if (courseName) select.value = courseName;
+      $('#heroEnquiryForm').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block:'center' });
+      window.setTimeout(() => $('#heroStudentName').focus({ preventScroll:true }), 500);
     }
     function setupPalette() {
       const dialog = $('#commandDialog'), input = $('#paletteInput'), list = $('#paletteList'); let selected = 0, entries = [];
@@ -364,12 +352,12 @@
     }
     function setupRoadmap() {
       const items=[
-        ['Discover','Explore your interests and choose a learning direction.','Find your focus','<circle cx="12" cy="12" r="8"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8z"/>'],
-        ['Learn','Build foundations in the topics and tools for your course.','Start with essentials','<path d="M3 5.5c3.4-.9 6.4-.3 9 1.8v12c-2.6-2.1-5.6-2.7-9-1.8zm18 0c-3.4-.9-6.4-.3-9 1.8v12c2.6-2.1 5.6-2.7 9-1.8z"/>'],
-        ['Practice','Apply new concepts in guided exercises.','Learn by doing','<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4m-3-10 2 2 4-4"/>'],
-        ['Build','Bring skills together in a practical portfolio project.','Make it yours','<path d="M4 5h16v14H4zM4 9h16M8 7h.01M11 7h.01"/><path d="m8 14 2 2 5-5"/>'],
-        ['Prepare','Practise explaining your skills, choices and project work.','Share your work','<path d="M4 5h16v12H9l-5 4z"/><path d="M8 10h8m-8 3h5"/>'],
-        ['Launch','Explore next steps, including opportunities where available and eligible.','Keep moving forward','<path d="M5 19 19 5M8 5h11v11"/><path d="M4 12v7h7"/>']
+        ['Discover','We will help you choose the right course based on your interests and career goals.','Course Guidance','<circle cx="12" cy="12" r="8"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8z"/>'],
+        ['Learn','SIT staff will provide structured training to help you understand the concepts and technologies.','Expert-Led Training','<path d="M3 5.5c3.4-.9 6.4-.3 9 1.8v12c-2.6-2.1-5.6-2.7-9-1.8zm18 0c-3.4-.9-6.4-.3-9 1.8v12c2.6-2.1 5.6-2.7 9-1.8z"/>'],
+        ['Practise','Guidance will be provided to improve your technical skills through practical exercises and lab sessions.','Hands-On Practice','<rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4m-3-10 2 2 4-4"/>'],
+        ['Build','SIT mentors will support you in developing projects using the technologies you learn.','Project-Based Learning','<path d="M4 5h16v14H4zM4 9h16M8 7h.01M11 7h.01"/><path d="m8 14 2 2 5-5"/>'],
+        ['Prepare','We will provide support with resume preparation, interview practice, and project presentation.','Career Preparation','<path d="M4 5h16v12H9l-5 4z"/><path d="M8 10h8m-8 3h5"/>'],
+        ['Launch','SIT will guide you in exploring suitable internship and job opportunities based on your skills and eligibility.','Career Guidance & Opportunities','<path d="M5 19 19 5M8 5h11v11"/><path d="M4 12v7h7"/>']
       ];
       $('#roadmapSteps').insertAdjacentHTML('beforeend',items.map((item,index)=>`<article class="road-step"><span class="road-node" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false">${item[3]}</svg></span><h3>${item[0]}</h3><p>${item[1]}</p><small>${item[2]}</small></article>`).join(''));
       const section=$('#roadmap'), roadmap=$('#roadmapSteps'), fill=$('#roadmapFill'), steps=$$('.road-step');
@@ -389,7 +377,6 @@
     function setupGeneral() {
       $('#courseSearch').addEventListener('input',renderCourses);
       $('#courseSort').addEventListener('change',renderCourses);
-      $('#courseSelect').innerHTML += courses.map(course=>`<option value="${course.title}">${course.title}</option>`).join('');
       $('#heroCourseSelect').innerHTML += courses.map(course=>`<option value="${course.title}">${course.title}</option>`).join('');
       const courseMenu=$('#courseMenu'), courseMenuToggle=$('#courseMenuToggle'), courseNav=$('.nav-courses');
       const internshipMenu=$('#internshipMenu'), internshipMenuToggle=$('#internshipMenuToggle'), internshipNav=$('.nav-internships');
@@ -403,8 +390,7 @@
       document.addEventListener('click',event=>{if(!courseNav.contains(event.target))closeCourseMenu();if(!internshipNav.contains(event.target))closeInternshipMenu();});
       document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!courseMenu.hidden)closeCourseMenu(true);if(event.key==='Escape'&&!internshipMenu.hidden)closeInternshipMenu(true);});
       // Demo only: replace this handler with an admissions backend submission.
-      $('#enquiryForm').addEventListener('submit',event=>{event.preventDefault();const name=$('#studentName').value.trim();$('#formMessage').textContent=`Thanks, ${name}. This demo form is ready to connect to your admissions backend.`;$('#formMessage').style.color='#34528c';event.currentTarget.reset();});
-      $('#heroEnquiryForm').addEventListener('submit',event=>{event.preventDefault();const name=$('#heroStudentName').value.trim();$('#heroFormMessage').textContent=`Thanks, ${name}. This demo form is ready to connect to your admissions backend.`;$('#heroFormMessage').style.color='#34528c';event.currentTarget.reset();});
+      $('#heroEnquiryForm').addEventListener('submit',event=>{event.preventDefault();const name=$('#heroStudentName').value.trim();$('#heroFormMessage').textContent=`Thanks, ${name}! We'll contact you soon.`;$('#heroFormMessage').style.color='#34528c';event.currentTarget.reset();});
       $('#dialogEnquire').addEventListener('click',()=>{const course=$('#dialogEnquire').dataset.course;$('#courseDialog').close();goToEnquiry(course);});
       $('#courseQuizContent').addEventListener('click', event => {
         const answer = event.target.closest('[data-course-quiz-answer]');
@@ -412,7 +398,7 @@
         if (event.target.closest('[data-course-quiz-next]')) { courseKnowledgeQuestionIndex += 1; renderCourseKnowledgeCheck(); return; }
         if (event.target.closest('[data-course-quiz-restart]')) { courseKnowledgeQuestionIndex = 0; courseKnowledgeScore = 0; courseKnowledgeAnswered = false; renderCourseKnowledgeCheck(); }
       });
-      $('[data-corporate-enquiry]').addEventListener('click', () => { $('#courseSelect').value = 'Corporate training enquiry'; });
+      $('[data-corporate-enquiry]').addEventListener('click', () => { $('#heroCourseSelect').value = 'Corporate training enquiry'; });
       $$('.internship-course-content button').forEach(button=>button.addEventListener('click',()=>goToEnquiry(button.dataset.internshipCourse)));
       $('#syllabusButton').addEventListener('click',()=>openCourse($('#syllabusButton').dataset.course));$('#restartQuiz').addEventListener('click',()=>{quizAnswers=[];renderQuiz();});
       $('#quizBack').addEventListener('click',()=>{quizAnswers.pop();renderQuiz();});
@@ -422,6 +408,23 @@
       const menu=$('#menuToggle'), links=$('#navLinks');menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation');links.classList.toggle('open',open);});$$('#navLinks a').forEach(link=>link.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Open navigation');}));
       window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;$('#scrollProgress').style.width=`${max>0?scrollY/max*100:0}%`;$('#backTop').classList.toggle('visible',scrollY>500);},{passive:true});
       $('#yearNow').textContent=new Date().getFullYear();
-      const tech=[...techStack,...techStack];$('#techTrack').innerHTML=tech.map((name,index)=>`<span class="tech-word">${name}${index<tech.length-1?'<i aria-hidden="true"></i>':''}</span>`).join('');
+      const tickerMarkup=items=>[...items,...items].map((name,index)=>`<span class="tech-word">${name}${index<items.length*2-1?'<i aria-hidden="true"></i>':''}</span>`).join('');
+      $('#techTrackNav').innerHTML=tickerMarkup(supportServices);
+      $('#techTrack').innerHTML=tickerMarkup(techStack);
     }
-    validateCourseKnowledgeChecks();renderFilters();renderCourses();renderQuiz();setupGeneral();setupCounters();setupRoadmap();setupStories();setupPalette();
+    function setupHeroCareerCarousel() {
+      const role=$('#heroCareerRole');
+      const careers=['Cloud Engineer','Data Analytics Professional','Data Scientist','Full Stack Developer','DevOps Engineer','Cybersecurity Analyst','UI/UX Designer','Generative AI Practitioner','Digital Marketer'];
+      if(!role||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+      let index=0;
+      window.setInterval(()=>{
+        if(document.hidden)return;
+        role.classList.add('is-changing');
+        window.setTimeout(()=>{
+          index=(index+1)%careers.length;
+          role.textContent=careers[index];
+          role.classList.remove('is-changing');
+        },240);
+      },2800);
+    }
+    validateCourseKnowledgeChecks();renderFilters();renderCourses();renderQuiz();setupGeneral();setupCounters();setupRoadmap();setupPalette();setupHeroCareerCarousel();
