@@ -3,12 +3,15 @@
       { id:"data-science", title:"Data Science with AI", category:"AI & Data", duration:"3–4 Months", level:"Beginner friendly", art:"chart", visualTags:["Python","Machine learning"], preview:["Python Programming","Statistics & Data Analysis","Machine Learning","Model Evaluation & Projects"], description:"Turn raw data into useful questions, models and clear explanations. Build a foundation in analysis and applied machine learning.", modules:["Python and data foundations","Exploratory analysis and visualisation","Machine learning workflows","Capstone: an end-to-end model"] },
       { id:"data-analytics", title:"Data Analytics", category:"AI & Data", duration:"3–4 Months", level:"Start with the basics", art:"pie", visualTags:["SQL","Dashboards"], preview:["SQL & Database Queries","Excel & Data Cleaning","Power BI & Dashboards","Business Insights & Reporting"], description:"Learn to find patterns, communicate metrics and support better decisions with practical analysis workflows.", modules:["Spreadsheets and data quality","SQL for everyday questions","Dashboards and visual storytelling","Capstone: an insight report"] },
       { id:"generative-ai", title:"Generative AI", category:"AI & Data", duration:"3–4 Months", level:"No coding required", art:"neural", visualTags:["Prompt design","AI workflows"], preview:["Generative AI Fundamentals","Prompt Engineering","AI Tools & Applications","Responsible AI Workflows"], description:"Explore generative AI tools and concepts, then prototype responsible workflows for real tasks.", modules:["How generative models work","Prompt design and evaluation","AI workflow prototyping","Capstone: a useful assistant"] },
-      { id:"full-stack", title:"Full Stack Development", category:"Development", duration:"3–4 Months", level:"Beginner friendly", art:"browser", visualTags:["JavaScript","APIs · UI"], preview:["HTML, CSS & JavaScript","Frontend Development","Backend & REST APIs","Databases & Deployment"], description:"Build responsive web experiences and the services behind them, with a focus on clean fundamentals.", modules:["HTML, CSS and interface craft","JavaScript and modern frontend","APIs, databases and backend","Capstone: a deployed web app"] },
+      { id:"ai-automated-testing", title:"AI Integrated Automated Testing", category:"Development", duration:"3–4 Months", level:"Beginner friendly", art:"testing", visualTags:["Playwright","AI-assisted QA"], preview:["Testing Fundamentals & Strategy","AI-Assisted Test Design","UI & API Automation","CI/CD, Reporting & Quality"], description:"Build reliable automated tests and use AI tools to support test planning and maintenance, with human review, clear evidence, and quality checks at every step.", modules:["Testing foundations and quality strategy","AI-assisted test planning and design","Browser, API and regression automation","CI/CD integration, reporting and responsible AI"] },
+      { id:"ai-full-stack-java", title:"AI Integrated Full Stack Development Java", category:"Development", duration:"3–4 Months", level:"Beginner friendly", art:"java", visualTags:["Java","Spring Boot · AI"], preview:["Web Foundations & Java","Spring Boot & REST APIs","Databases & Frontend Integration","AI-Assisted Development & Deployment"], description:"Build full-stack applications with Java and Spring Boot, and learn to use AI development tools responsibly to support coding, testing, and documentation.", modules:["Web foundations and Java programming","Backend services with Spring Boot","Databases, APIs and frontend integration","AI-assisted development, testing and deployment"] },
+      { id:"ai-full-stack-python", title:"AI Integrated Full Stack Development Python", category:"Development", duration:"3–4 Months", level:"Beginner friendly", art:"python", visualTags:["Python","Django · AI"], preview:["Web Foundations & Python","Django & REST APIs","Databases & Frontend Integration","AI-Assisted Development & Deployment"], description:"Build full-stack applications with Python and Django, and learn to use AI development tools responsibly to support coding, testing, and documentation.", modules:["Web foundations and Python programming","Backend services with Django","Databases, APIs and frontend integration","AI-assisted development, testing and deployment"] },
       { id:"cloud-aws", title:"Cloud with AWS", category:"Cloud & DevOps", duration:"3–4 Months", level:"Some IT familiarity", art:"cloud", visualTags:["AWS","Cloud services"], preview:["Cloud Computing Fundamentals","AWS Core Services","IAM, VPC & Security","Hosting & Cloud Monitoring"], description:"Understand core cloud services and practice designing, securing and operating simple cloud workloads.", modules:["Cloud concepts and IAM","Compute, storage and networking","Monitoring and security","Capstone: a cloud architecture"] },
       { id:"devops", title:"DevOps Engineering", category:"Cloud & DevOps", duration:"3–4 Months", level:"Some IT familiarity", art:"infinity", visualTags:["CI/CD","Containers"], preview:["Linux & Git","Docker & Containers","Jenkins & CI/CD Pipelines","Kubernetes & Terraform"], description:"Connect development and operations through automation, repeatable delivery and observable systems.", modules:["Linux, Git and collaboration","CI/CD pipelines","Containers and orchestration","Capstone: automated delivery"] },
       { id:"cyber-security", title:"Cyber Security", category:"Cloud & DevOps", duration:"3–4 Months", level:"Foundational IT", art:"shield", visualTags:["Threat analysis","Defense"], preview:["Security Fundamentals","Networking & Threat Analysis","Vulnerability Assessment","Defensive Security Labs"], description:"Develop a defensive mindset and learn core security practices through controlled lab exercises.", modules:["Security concepts and threat models","Network and system fundamentals","Detection and incident response","Capstone: a security assessment"] },
       { id:"ui-ux", title:"UI/UX Design", category:"Design", duration:"3–4 Months", level:"No experience needed", art:"wireframe", visualTags:["User research","Prototyping"], preview:["Design Principles","User Research & Personas","Wireframes & Prototypes","Usability Testing"], description:"Research user needs, shape interfaces and test design decisions with thoughtful prototypes.", modules:["Research and problem framing","Information architecture","Interface systems and prototyping","Capstone: a tested product flow"] },
-      { id:"digital-marketing", title:"Digital Marketing", category:"Marketing", duration:"3–4 Months", level:"No experience needed", art:"chart", visualTags:["SEO","Campaign analytics"], preview:["SEO & Search Marketing","Social Media Marketing","Content & Campaign Planning","Analytics & Performance Tracking"], description:"Plan digital campaigns, reach the right audiences and measure what works across search, social and content.", modules:["Audience research and marketing strategy","Content and social media campaigns","Search and paid advertising fundamentals","Capstone: a measurable campaign plan"] }
+      { id:"digital-marketing", title:"Digital Marketing", category:"Marketing", duration:"3–4 Months", level:"No experience needed", art:"chart", visualTags:["SEO","Campaign analytics"], preview:["SEO & Search Marketing","Social Media Marketing","Content & Campaign Planning","Analytics & Performance Tracking"], description:"Plan digital campaigns, reach the right audiences and measure what works across search, social and content.", modules:["Audience research and marketing strategy","Content and social media campaigns","Search and paid advertising fundamentals","Capstone: a measurable campaign plan"] },
+      { id:"medical-coding", title:"Medical Coding", category:"Healthcare", duration:"3–4 Months", level:"Beginner friendly", art:"medical", visualTags:["ICD-10-CM","CPT · HCPCS"], preview:["Medical Terminology & Anatomy","ICD-10-CM Diagnosis Coding","CPT & HCPCS Procedure Coding","Documentation & Compliance"], description:"Learn how to translate clinical documentation into standard diagnosis and procedure codes with accuracy, privacy, and compliance in mind.", modules:["Medical terminology and anatomy foundations","ICD-10-CM diagnosis coding","CPT and HCPCS procedure coding","Documentation, compliance and practical coding"] }
     ];
     const syllabusDetails = {
       "data-science": [
@@ -29,11 +32,23 @@
         { topics: ["Mapping a workflow and selecting appropriate tools", "Human review, safeguards and quality checks"], practice: "Prototype a small AI-assisted workflow with a review step." },
         { topics: ["Defining user needs and success criteria", "Testing, documenting and presenting an AI assistant"], practice: "Present a useful assistant prototype and its limitations." }
       ],
-      "full-stack": [
-        { topics: ["Semantic HTML, page structure and accessibility", "CSS layout, responsive design and visual hierarchy"], practice: "Build a responsive multi-section web page." },
-        { topics: ["JavaScript fundamentals, DOM and events", "Components, state and working with browser APIs"], practice: "Create an interactive interface with form validation." },
-        { topics: ["HTTP, REST API concepts and server-side basics", "Data modelling, persistence and input validation"], practice: "Connect a user interface to a simple data-backed service." },
-        { topics: ["Planning and building a complete application", "Testing, accessibility checks and deployment basics"], practice: "Present a deployed web app and explain its architecture." }
+      "ai-automated-testing": [
+        { topics: ["Test levels, risk-based coverage and quality goals", "Writing clear, maintainable test cases"], practice: "Create a test plan for a small fictional application." },
+        { topics: ["Using AI tools to brainstorm scenarios and edge cases", "Reviewing AI suggestions for accuracy, privacy and coverage"], practice: "Compare AI-suggested scenarios with requirements and keep only verified cases." },
+        { topics: ["Browser automation with Playwright", "API checks, assertions and regression coverage"], practice: "Automate a browser flow and an API check against a practice application." },
+        { topics: ["Running tests in a CI workflow", "Failure analysis, reporting and responsible AI use"], practice: "Present an automated test report and explain any AI-assisted decisions." }
+      ],
+      "ai-full-stack-java": [
+        { topics: ["Semantic HTML, CSS and accessible page structure", "Java syntax, object-oriented programming and collections"], practice: "Build a responsive page and model a simple application feature in Java." },
+        { topics: ["Spring Boot application structure and dependency injection", "REST endpoints, validation and error handling"], practice: "Create a REST API with validated request and response models." },
+        { topics: ["Relational data modelling and persistence", "Connecting APIs to a frontend and managing application state"], practice: "Connect a frontend to a Java API backed by a database." },
+        { topics: ["Using AI coding tools with review and verification", "Testing, secure configuration and deployment basics"], practice: "Build, test and present a full-stack Java application, documenting where AI assistance was reviewed." }
+      ],
+      "ai-full-stack-python": [
+        { topics: ["Semantic HTML, CSS and accessible page structure", "Python syntax, data structures and application design"], practice: "Build a responsive page and model a simple application feature in Python." },
+        { topics: ["Django project structure, views and URL routing", "REST endpoints, validation and error handling"], practice: "Create a Django API with validated request and response data." },
+        { topics: ["Relational data modelling and Django ORM", "Connecting APIs to a frontend and managing application state"], practice: "Connect a frontend to a Django API backed by a database." },
+        { topics: ["Using AI coding tools with review and verification", "Testing, secure configuration and deployment basics"], practice: "Build, test and present a full-stack Python application, documenting where AI assistance was reviewed." }
       ],
       "cloud-aws": [
         { topics: ["Cloud service models and shared responsibility", "Identity, access policies and account safety"], practice: "Map access needs for a sample cloud workload." },
@@ -64,6 +79,12 @@
         { topics: ["Content planning and channel selection", "Social publishing and campaign coordination"], practice: "Create a short content calendar tied to a campaign goal." },
         { topics: ["Search intent, SEO fundamentals and paid search concepts", "Campaign metrics, attribution and budget basics"], practice: "Draft a search campaign structure and measurement plan." },
         { topics: ["Defining KPIs and interpreting campaign results", "Optimisation, reporting and ethical communication"], practice: "Present a measurable campaign plan with success criteria." }
+      ],
+      "medical-coding": [
+        { topics: ["Medical terminology, word parts and abbreviations", "Body systems, anatomy and basic clinical language"], practice: "Break down common medical terms and match them to the correct body system." },
+        { topics: ["ICD-10-CM structure, conventions and guidelines", "Selecting diagnosis codes from provider documentation"], practice: "Assign diagnosis codes to practice scenarios using the documentation and coding guidelines provided." },
+        { topics: ["CPT code set structure and procedure coding", "HCPCS Level II concepts and code selection"], practice: "Compare procedure descriptions with coding references and explain the code selection." },
+        { topics: ["Documentation review and query fundamentals", "Privacy, compliance, claim workflows and quality checks"], practice: "Review a fictional record for coding completeness, accuracy and privacy considerations." }
       ]
     };
     const courseKnowledgeChecks = {
@@ -88,12 +109,26 @@
         ["What should you avoid entering into an unapproved AI tool?", ["Sensitive or confidential information", "A public general question", "A fictional example"], 0, "Follow privacy rules and do not share sensitive data with unapproved tools."],
         ["What should happen before using AI-generated work in an important decision?", ["Human review and verification", "Automatic publication", "Assume it is unbiased"], 0, "Human oversight helps catch mistakes, bias and missing context."]
       ],
-      "full-stack": [
-        ["What is semantic HTML primarily for?", ["Giving page content meaningful structure", "Adding database records", "Running server processes"], 0, "Semantic elements describe the purpose and structure of page content."],
-        ["Which technology is mainly used to style a web page?", ["CSS", "SQL", "DNS"], 0, "CSS controls presentation, layout and responsive styling."],
-        ["What does JavaScript commonly add to a web page?", ["Interactive behaviour", "A network address", "A database schema"], 0, "JavaScript can respond to user actions and update interface behaviour."],
-        ["What is an API commonly used for in a web application?", ["Letting software systems exchange data or actions", "Choosing font sizes", "Compressing images only"], 0, "An API defines a way for clients and services to communicate."],
-        ["Why validate user input on the server as well as the browser?", ["Browser checks can be bypassed", "It makes the site load without HTML", "It replaces authentication"], 0, "Server-side validation is essential because clients are not trusted."]
+      "ai-automated-testing": [
+        ["What is the main benefit of automated regression tests?", ["They repeatedly check that existing behavior still works", "They guarantee software has no defects", "They replace all exploratory testing"], 0, "Automated regression tests provide repeatable checks, but they cannot prove software is defect-free."],
+        ["How should AI-suggested test cases be used?", ["Review them against requirements and verify before use", "Accept every suggestion without review", "Use them instead of defining expected behavior"], 0, "AI suggestions can be incomplete or incorrect, so validate them against requirements."],
+        ["What does an assertion do in an automated test?", ["Checks that an observed result matches an expectation", "Starts a production deployment", "Generates a random user account"], 0, "Assertions compare actual behavior with an expected result."],
+        ["What is a useful practice for a reliable UI test?", ["Use stable selectors and clear expected outcomes", "Depend on arbitrary timing delays", "Make the test pass regardless of the result"], 0, "Stable selectors and explicit expectations make UI tests more reliable."],
+        ["When is it appropriate to include real user data in an AI testing prompt?", ["Only when specifically approved and protected under applicable policy", "Whenever it makes the prompt more detailed", "When the AI tool is publicly available"], 0, "Use approved, privacy-safe test data and follow organizational policies."]
+      ],
+      "ai-full-stack-java": [
+        ["Which framework is commonly used to build Java backend services?", ["Spring Boot", "Django", "Playwright"], 0, "Spring Boot is commonly used to create Java applications and backend services."],
+        ["What is a REST API typically used for?", ["Exchanging data between application components", "Styling page layouts", "Compiling database tables"], 0, "APIs let application components communicate through defined requests and responses."],
+        ["Why validate data received by a backend?", ["To reject invalid input and protect application behavior", "To make authentication unnecessary", "To guarantee the database never changes"], 0, "Backend validation is essential because client-side checks can be bypassed."],
+        ["How should AI-generated Java code be handled?", ["Review, test and verify it before relying on it", "Merge it without reading", "Assume it is secure because it compiles"], 0, "AI-generated code can contain errors or security issues and needs human review and testing."],
+        ["What is a relational database used for in a web application?", ["Persisting structured data with defined relationships", "Rendering CSS animations", "Replacing API validation"], 0, "Relational databases store structured data and support relationships between records."]
+      ],
+      "ai-full-stack-python": [
+        ["Which framework is commonly used to build Python web applications?", ["Django", "Spring Boot", "JUnit"], 0, "Django is a Python framework for building web applications."],
+        ["What is a REST API typically used for?", ["Exchanging data between application components", "Styling page layouts", "Compiling database tables"], 0, "APIs let application components communicate through defined requests and responses."],
+        ["What does Django's ORM help developers do?", ["Work with database records through Python objects", "Style browser elements", "Run UI tests in a browser"], 0, "Django's ORM maps database operations to Python model objects."],
+        ["How should AI-generated Python code be handled?", ["Review, test and verify it before relying on it", "Merge it without reading", "Assume it is secure because it runs"], 0, "AI-generated code can contain errors or security issues and needs human review and testing."],
+        ["Why validate data received by a backend?", ["To reject invalid input and protect application behavior", "To make authentication unnecessary", "To guarantee the database never changes"], 0, "Backend validation is essential because client-side checks can be bypassed."]
       ],
       "cloud-aws": [
         ["What is IAM used for in cloud environments?", ["Managing identities and permissions", "Drawing interface wireframes", "Compressing images"], 0, "Identity and access management controls who can access which resources."],
@@ -129,6 +164,13 @@
         ["Why define an audience before planning content?", ["To make messaging more relevant", "To avoid setting goals", "To guarantee every post goes viral"], 0, "Audience needs help shape useful messages and channel choices."],
         ["What is a call to action?", ["A prompt that invites the next step", "A search engine ranking", "A type of image file"], 0, "A call to action tells people what to do next."],
         ["What should a campaign report compare?", ["Results against goals and relevant context", "Only the number of colours used", "Unrelated metrics without a question"], 0, "Measurement is useful when tied to objectives and interpreted in context."]
+      ],
+      "medical-coding": [
+        ["What is the purpose of medical coding?", ["Representing documented diagnoses and services with standard codes", "Creating a treatment plan independently", "Replacing the patient's medical record"], 0, "Medical coding translates documented clinical information into standard codes; it does not replace clinical judgment or the medical record."],
+        ["Which code set is commonly used for diagnoses in the United States?", ["ICD-10-CM", "CPT", "HCPCS Level II only"], 0, "ICD-10-CM is used to report diagnoses in the United States."],
+        ["What should a coder do when documentation does not support a specific code?", ["Follow coding guidelines and seek clarification when needed", "Guess based on the most common diagnosis", "Add details that are not in the record"], 0, "Code assignment should be supported by documentation and applicable guidelines."],
+        ["What does CPT primarily describe?", ["Medical procedures and professional services", "Patient diagnoses only", "Insurance plan premiums"], 0, "CPT is used to report many medical procedures and professional services."],
+        ["How should patient information be handled during coding practice?", ["Keep it private and follow applicable privacy rules", "Share it in public examples", "Copy it to a personal account"], 0, "Patient information must be protected and handled according to applicable privacy requirements."]
       ]
     };
     let activeCourseKnowledgeCheck = null;
@@ -138,64 +180,74 @@
     const quizQuestions = [
       { prompt:"Which problem would you most enjoy solving?", answers:[
         { label:"Finding a useful pattern in a lot of information", scores:{"data-science":2,"data-analytics":2} },
-        { label:"Making a helpful online tool", scores:{"full-stack":2,"generative-ai":1} },
-        { label:"Making a confusing screen easier to use", scores:{"ui-ux":2,"full-stack":1} },
+        { label:"Matching healthcare documentation with standard codes", scores:{"medical-coding":2} },
+        { label:"Making a helpful online tool", scores:{"ai-full-stack-java":1,"ai-full-stack-python":1,"generative-ai":1} },
+        { label:"Making a confusing screen easier to use", scores:{"ui-ux":2,"ai-full-stack-java":1,"ai-full-stack-python":1} },
+        { label:"Checking software automatically before release", scores:{"ai-automated-testing":2} },
         { label:"Working out why a system is not running properly", scores:{"cyber-security":2,"cloud-aws":1,"devops":1} },
         { label:"Helping more people discover a product or service", scores:{"digital-marketing":2,"data-analytics":1} }
       ] },
       { prompt:"Which activity sounds most satisfying?", answers:[
         { label:"Turning figures into a clear story", scores:{"data-analytics":2,"data-science":1} },
-        { label:"Writing instructions that help a computer do a task", scores:{"full-stack":2,"generative-ai":1,"devops":1} },
-        { label:"Sketching how an app or website should work", scores:{"ui-ux":2,"full-stack":1} },
+        { label:"Checking clinical notes against coding guidelines", scores:{"medical-coding":2} },
+        { label:"Writing instructions that help a computer do a task", scores:{"ai-full-stack-java":1,"ai-full-stack-python":1,"ai-automated-testing":1,"generative-ai":1,"devops":1} },
+        { label:"Sketching how an app or website should work", scores:{"ui-ux":2,"ai-full-stack-java":1,"ai-full-stack-python":1} },
         { label:"Setting up services so people can use them reliably", scores:{"cloud-aws":2,"devops":2} },
         { label:"Planning useful posts for different audiences", scores:{"digital-marketing":2,"ui-ux":1} }
       ] },
       { prompt:"When something goes wrong, what do you tend to do first?", answers:[
         { label:"Look for clues and compare what has changed", scores:{"data-science":1,"data-analytics":1,"cyber-security":1} },
-        { label:"Try a fix and see what happens", scores:{"full-stack":2,"devops":1} },
+        { label:"Check whether a code is supported by the clinical documentation", scores:{"medical-coding":2} },
+        { label:"Try a fix and see what happens", scores:{"ai-full-stack-java":1,"ai-full-stack-python":1,"ai-automated-testing":1,"devops":1} },
         { label:"Ask people where they got stuck", scores:{"ui-ux":2,"digital-marketing":1} },
         { label:"Check the setup, access and connections", scores:{"cloud-aws":1,"devops":2,"cyber-security":2} }
       ] },
       { prompt:"Which project would you be proud to finish?", answers:[
         { label:"A report that helps someone make a better decision", scores:{"data-analytics":2,"data-science":1} },
-        { label:"A working website or app", scores:{"full-stack":2,"ui-ux":1} },
+        { label:"An accurate, well-documented coding review", scores:{"medical-coding":2} },
+        { label:"A working website or app", scores:{"ai-full-stack-java":1,"ai-full-stack-python":1,"ui-ux":1} },
+        { label:"A reliable automated test suite", scores:{"ai-automated-testing":2} },
         { label:"A simple AI helper for a real task", scores:{"generative-ai":2,"data-science":1} },
         { label:"A safer, more dependable online service", scores:{"cyber-security":2,"cloud-aws":1,"devops":1} },
         { label:"A campaign that reaches the right people", scores:{"digital-marketing":2,"data-analytics":1} }
       ] },
       { prompt:"Which detail are you most likely to notice?", answers:[
         { label:"Numbers that do not seem to add up", scores:{"data-science":1,"data-analytics":2} },
-        { label:"A button or feature that does not work", scores:{"full-stack":2,"devops":1} },
+        { label:"A button or feature that does not work", scores:{"ai-automated-testing":2,"ai-full-stack-java":1,"ai-full-stack-python":1,"devops":1} },
         { label:"A page that feels hard to follow", scores:{"ui-ux":2} },
         { label:"A strange message or access request", scores:{"cyber-security":2,"cloud-aws":1} },
+        { label:"A mismatch between clinical notes and a code", scores:{"medical-coding":2} },
         { label:"A message that does not connect with its audience", scores:{"digital-marketing":2,"ui-ux":1} }
       ] },
       { prompt:"What would you like to understand better?", answers:[
         { label:"How information can answer useful questions", scores:{"data-analytics":2,"data-science":2} },
-        { label:"How websites and apps are made", scores:{"full-stack":2} },
+        { label:"How diagnoses and procedures are represented in healthcare records", scores:{"medical-coding":2} },
+        { label:"How websites and apps are made", scores:{"ai-full-stack-java":1,"ai-full-stack-python":1} },
+        { label:"How software can be tested automatically", scores:{"ai-automated-testing":2} },
         { label:"How people use and respond to digital products", scores:{"ui-ux":2,"digital-marketing":1} },
         { label:"How online services stay secure and available", scores:{"cyber-security":1,"cloud-aws":2,"devops":1} },
         { label:"How AI tools can support everyday work", scores:{"generative-ai":2,"data-science":1} }
       ] },
       { prompt:"Which way of thinking suits you best?", answers:[
         { label:"Testing ideas and learning from evidence", scores:{"data-science":2,"data-analytics":1} },
-        { label:"Breaking a big task into small steps", scores:{"full-stack":1,"devops":2,"cloud-aws":1} },
+        { label:"Breaking a big task into small steps", scores:{"ai-full-stack-java":1,"ai-full-stack-python":1,"ai-automated-testing":1,"devops":2,"cloud-aws":1} },
         { label:"Considering different people's needs", scores:{"ui-ux":2,"digital-marketing":1} },
-        { label:"Checking details and looking for risks", scores:{"cyber-security":2,"data-analytics":1} },
+        { label:"Checking details and looking for risks", scores:{"cyber-security":2,"data-analytics":1,"medical-coding":1} },
         { label:"Trying new ways to share an idea", scores:{"digital-marketing":2,"generative-ai":1} }
       ] },
       { prompt:"What would you most like to take away from a course?", answers:[
         { label:"Confidence working with data", scores:{"data-analytics":2,"data-science":1} },
-        { label:"A website or app I have built", scores:{"full-stack":2} },
+        { label:"A website or app I have built", scores:{"ai-full-stack-java":1,"ai-full-stack-python":1} },
+        { label:"A tested application with reliable automated checks", scores:{"ai-automated-testing":2} },
         { label:"A useful design or prototype", scores:{"ui-ux":2} },
         { label:"Skills to manage or protect online systems", scores:{"cloud-aws":1,"devops":1,"cyber-security":2} },
         { label:"A plan for reaching and measuring an audience", scores:{"digital-marketing":2,"data-analytics":1} },
         { label:"A practical AI project", scores:{"generative-ai":2,"data-science":1} }
       ] }
     ];
-    const techStack = ["PYTHON","JAVASCRIPT","AWS","FIGMA","SQL","DOCKER","REACT","GIT","MACHINE LEARNING","LINUX"];
+    const techStack = ["PYTHON","JAVA","SPRING BOOT","DJANGO","PLAYWRIGHT","AI TESTING","AWS","FIGMA","SQL","DOCKER","REACT","GIT","MACHINE LEARNING","LINUX","ICD-10-CM","CPT","HCPCS"];
     const supportServices = ["APTITUDE CLASSES","SPOKEN ENGLISH","SOFT SKILLS TRAINING","RESUME BUILDING","MOCK INTERVIEWS","CAREER GUIDANCE","INTERNSHIP OPPORTUNITIES","HANDS-ON PROJECTS","INDUSTRY TOOLS TRAINING","PORTFOLIO DEVELOPMENT","TECH WORKSHOPS","CAREER PREPARATION","GITHUB GUIDANCE","PLACEMENT PREPARATION"];
-    const courseCategories = ["All","AI & Data","Development","Cloud & DevOps","Design","Marketing"];
+    const courseCategories = ["All","AI & Data","Development","Cloud & DevOps","Design","Marketing","Healthcare"];
     const $ = (selector, root=document) => root.querySelector(selector);
     const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
 
@@ -205,10 +257,13 @@
         "data-science":'<rect x="78" y="39" width="164" height="125" rx="9" fill="#102d57"/><path d="M101 139h136M109 128v-23m28 23V92m28 36V77m28 51V99m28 29V67" stroke="#8fc8f3" stroke-width="8"/><path d="m106 85 30-17 27 8 28-27 31 9" stroke="#65dfc4" stroke-width="3"/><circle cx="136" cy="68" r="5" fill="#65dfc4"/><circle cx="191" cy="49" r="5" fill="#ffc83d"/><circle cx="230" cy="58" r="5" fill="#c796ff"/><path d="M96 51h28m-28 10h18" stroke="#dcecff" stroke-width="3"/>',
         "data-analytics":'<rect x="76" y="39" width="168" height="125" rx="9" fill="#102d57"/><path d="M76 68h168M92 53h29" stroke="#dcecff" stroke-width="3"/><circle cx="124" cy="111" r="25" fill="#397ec4"/><path d="M124 86a25 25 0 0 1 24 31l-24-6Z" fill="#65dfc4"/><path d="m124 111 24 6a25 25 0 0 1-41 13Z" fill="#ffc83d"/><path d="M165 141v-16h12v16m8 0V99h12v42m8 0v-29h12v29" fill="#8fc8f3"/><path d="M165 91h50" stroke="#dcecff" stroke-width="3"/>',
         "generative-ai":'<rect x="74" y="43" width="172" height="118" rx="10" fill="#102d57"/><path d="M74 70h172M91 56h28" stroke="#dcecff" stroke-width="3"/><rect x="91" y="84" width="119" height="20" rx="7" fill="#274d7d"/><circle cx="101" cy="94" r="4" fill="#65dfc4"/><path d="M111 94h86" stroke="#b9d7f5" stroke-width="3"/><rect x="110" y="115" width="119" height="20" rx="7" fill="#3b3875"/><path d="M124 125h91" stroke="#d8c9ff" stroke-width="3"/><path d="m224 79 5 11 11 5-11 5-5 11-5-11-11-5 11-5Z" fill="#ffc83d" stroke="none"/>',
-        "full-stack":'<rect x="66" y="43" width="145" height="112" rx="9" fill="#102d57"/><path d="M66 70h145m-130-14h3m11 0h3" stroke="#dcecff" stroke-width="3"/><path d="m102 91-13 12 13 12m27-24 13 12-13 12m19-27-8 30" stroke="#65dfc4" stroke-width="4"/><ellipse cx="236" cy="108" rx="29" ry="12" fill="#3967a0"/><path d="M207 108v33c0 7 13 12 29 12s29-5 29-12v-33m-58 16c0 7 13 12 29 12s29-5 29-12" stroke="#a4c9f0" stroke-width="3"/><ellipse cx="236" cy="108" rx="29" ry="12" stroke="#a4c9f0" stroke-width="3"/>',
+        "ai-automated-testing":'<rect x="76" y="39" width="168" height="126" rx="9" fill="#102d57"/><path d="M98 66h78m-78 24h50m-50 24h78m-78 24h43" stroke="#8fc8f3" stroke-width="5"/><path d="m183 87 13 13 25-29m-38 53 13 13 25-29" fill="none" stroke="#65dfc4" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="m213 39 4 10 10 4-10 4-4 10-4-10-10-4 10-4Z" fill="#ffc83d" stroke="none"/>',
+        "ai-full-stack-java":'<rect x="69" y="42" width="146" height="116" rx="9" fill="#102d57"/><path d="M69 68h146m-130-14h3m11 0h3" stroke="#dcecff" stroke-width="3"/><path d="m108 91-13 12 13 12m27-24 13 12-13 12m19-27-8 30" stroke="#65dfc4" stroke-width="4"/><rect x="231" y="66" width="35" height="70" rx="6" fill="#315f94"/><path d="M239 81h19m-19 13h19m-19 13h14" stroke="#ffc83d" stroke-width="3"/><circle cx="248" cy="126" r="3" fill="#65dfc4"/>',
+        "ai-full-stack-python":'<rect x="66" y="43" width="147" height="114" rx="9" fill="#102d57"/><path d="M66 69h147m-131-14h3m11 0h3" stroke="#dcecff" stroke-width="3"/><path d="m105 92-13 12 13 12m27-24 13 12-13 12m19-27-8 30" stroke="#65dfc4" stroke-width="4"/><path d="M224 75h31a12 12 0 0 1 12 12v13h-29a12 12 0 0 1-12-12Zm40 27h-31a12 12 0 0 0-12 12v13h29a12 12 0 0 0 12-12Z" fill="#315f94" stroke="#8fc8f3" stroke-width="3"/><circle cx="233" cy="84" r="3" fill="#ffc83d" stroke="none"/><circle cx="250" cy="135" r="3" fill="#65dfc4" stroke="none"/>',
         "cloud-aws":'<path d="M110 108a30 30 0 0 1 6-59 45 45 0 0 1 82 11 27 27 0 0 1 4 53h-92Z" fill="#275b91"/><path d="M156 84v46m-35-2h71m-59-22-12 12m59-12 12 12" stroke="#65dfc4" stroke-width="4"/><rect x="110" y="137" width="30" height="20" rx="4" fill="#4176ae"/><rect x="145" y="137" width="30" height="20" rx="4" fill="#4176ae"/><rect x="180" y="137" width="30" height="20" rx="4" fill="#4176ae"/><circle cx="125" cy="147" r="3" fill="#ffc83d"/><circle cx="160" cy="147" r="3" fill="#ffc83d"/><circle cx="195" cy="147" r="3" fill="#ffc83d"/>',
         "devops":'<path d="M103 86a55 55 0 0 1 98-14l12 16m0 0-22-2m22 2-1-21M217 119a55 55 0 0 1-98 14l-12-16m0 0 22 2m-22-2 1 21" stroke="#65dfc4" stroke-width="4"/><circle cx="104" cy="104" r="20" fill="#24517f"/><circle cx="216" cy="104" r="20" fill="#24517f"/><rect x="143" y="81" width="34" height="46" rx="7" fill="#315f94"/><path d="M153 93h14m-14 11h14m-14 11h9" stroke="#e1efff" stroke-width="3"/><circle cx="104" cy="104" r="6" fill="#ffc83d"/><circle cx="216" cy="104" r="6" fill="#c796ff"/>',
         "cyber-security":'<path d="M157 37 219 60v43c0 36-26 60-62 78-36-18-62-42-62-78V60l62-23Z" fill="#274c7a"/><path d="M157 53 204 70v33c0 27-18 45-47 61-29-16-47-34-47-61V70l47-17Z" stroke="#65dfc4" stroke-width="3"/><rect x="136" y="91" width="42" height="34" rx="7" fill="#8fc8f3"/><path d="M145 91v-9a12 12 0 0 1 24 0v9" stroke="#dcecff" stroke-width="4"/><circle cx="157" cy="106" r="4" fill="#17345b" stroke="none"/><path d="M157 110v7" stroke="#17345b" stroke-width="3"/>',
+        "medical-coding":'<rect x="91" y="38" width="138" height="128" rx="10" fill="#102d57"/><path d="M111 61h54m-54 18h96m-96 16h96m-96 16h58m-58 25h96" stroke="#8fc8f3" stroke-width="4"/><path d="M191 48v25m-12.5-12.5h25" stroke="#65dfc4" stroke-width="5"/><circle cx="193" cy="61" r="21" fill="none" stroke="#65dfc4" stroke-width="3"/>',
         "ui-ux":'<rect x="111" y="31" width="91" height="142" rx="15" fill="#274c7a"/><rect x="119" y="43" width="75" height="116" rx="7" fill="#f2f7ff"/><rect x="127" y="52" width="58" height="32" rx="5" fill="#8fc8f3"/><circle cx="139" cy="67" r="7" fill="#65dfc4"/><path d="M151 63h25m-25 7h19" stroke="#17345b" stroke-width="3"/><rect x="127" y="92" width="58" height="7" rx="3" fill="#bdd2e9"/><rect x="127" y="105" width="42" height="7" rx="3" fill="#bdd2e9"/><rect x="127" y="121" width="58" height="22" rx="6" fill="#4c72d8"/><path d="m220 91 25 29-13-2-6 13Z" fill="#ffc83d" stroke="#102d57" stroke-width="3"/>',
         "digital-marketing":'<rect x="75" y="44" width="133" height="110" rx="9" fill="#102d57"/><path d="M75 69h133m-116-13h3m11 0h3" stroke="#dcecff" stroke-width="3"/><rect x="91" y="86" width="47" height="51" rx="5" fill="#275b91"/><path d="M101 124v-13h7v13m7 0V99h7v25" fill="#65dfc4"/><path d="M151 91h42m-42 12h32m-32 12h38" stroke="#dcecff" stroke-width="4"/><path d="m232 82 33 11v31l-33 11V82Zm0 9-18 10v17l18 9m-6 7 6 16h11l-5-19" fill="#c796ff" stroke="#e7dcff" stroke-width="3"/><circle cx="255" cy="68" r="5" fill="#ffc83d"/><path d="M269 62h13m-11 13 9 5" stroke="#ffc83d" stroke-width="3"/>'
       };
@@ -221,6 +276,9 @@
         cloud:'<path d="M105 114a30 30 0 0 1 5-59 45 45 0 0 1 83 9 27 27 0 0 1 5 53h-93Z"/><rect x="111" y="127" width="76" height="15" rx="4"/><rect x="111" y="149" width="76" height="15" rx="4" fill="#bcdcff"/><circle cx="174" cy="134" r="3" fill="#ffc83d"/><circle cx="174" cy="156" r="3" fill="#ffc83d"/><path d="M94 141h-14m124-1h18"/>',
         infinity:'<path d="M154 102c-26-40-62-42-73-16-12 28 16 57 43 43 18-9 40-48 60-53 28-8 49 19 37 43-13 26-47 22-67-17Z"/><circle cx="82" cy="83" r="5" fill="#ffc83d"/><circle cx="221" cy="83" r="5" fill="#bcdcff"/><path d="M89 154h130"/>',
         shield:'<path d="M155 38 212 59v43c0 37-24 61-57 77-33-16-57-40-57-77V59l57-21Z"/><rect x="135" y="91" width="40" height="32" rx="5" fill="#bcdcff"/><path d="M143 91v-9a12 12 0 0 1 24 0v9"/><circle cx="155" cy="106" r="3" fill="#10204b" stroke="none"/><path d="M155 109v7" stroke="#10204b"/>',
+        testing:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 3.5h6M8 11l2.5 2.5L16 8m-8 9h8"/>',
+        java:'<path d="M7 18h10a2 2 0 0 0 2-2v-5H5v5a2 2 0 0 0 2 2Zm0 3h10M8 11V8h8v3m-6-6c0-2 2-2 2-4m2 5c0-2 2-2 2-4"/>',
+        python:'<path d="M12 3H8a3 3 0 0 0-3 3v4h8v2H7a3 3 0 0 0-3 3v2a4 4 0 0 0 4 4h4v-6h4a3 3 0 0 0 3-3V8a5 5 0 0 0-5-5h-2Zm-2 3h.01M14 18h.01"/>',
         wireframe:'<rect x="77" y="42" width="164" height="121" rx="7"/><path d="M77 69h164M92 55h2m10 0h2m10 0h2"/><rect x="96" y="88" width="55" height="58" rx="3"/><path d="M163 91h58m-58 13h48m-48 13h53m-53 13h34"/><path d="m171 134 9 9 19-23" stroke="#ffc83d"/>',
       };
       const courseTitle = courses.find(course => course.id === courseId)?.title;
@@ -235,6 +293,7 @@
         cloud:'<path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.4-1.4A4.7 4.7 0 0 0 7 18Z"/><path d="M9 21h8m-6-3v3m4-3v3"/>',
         infinity:'<path d="M3 12c0-3 4-5 7-2l4 4c3 3 7 1 7-2s-4-5-7-2l-4 4c-3 3-7 1-7-2Z"/>',
         shield:'<path d="M12 3 20 6v5c0 5-3.3 8-8 10-4.7-2-8-5-8-10V6Z"/><rect x="9" y="10" width="6" height="5" rx="1"/><path d="M10 10V8a2 2 0 0 1 4 0v2"/>',
+        medical:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 3.5h6M12 8v6m-3-3h6m-7 6h8"/>',
         wireframe:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8h18m-14 4h5v5H7zm8 0h3m-3 3h3"/>'
       };
       return `<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">${icons[type] || icons.chart}</svg>`;
@@ -414,7 +473,7 @@
     }
     function setupHeroCareerCarousel() {
       const role=$('#heroCareerRole');
-      const careers=['Cloud Engineer','Data Analytics Professional','Data Scientist','Full Stack Developer','DevOps Engineer','Cybersecurity Analyst','UI/UX Designer','Generative AI Practitioner','Digital Marketer'];
+      const careers=['Cloud Engineer','Data Analytics Professional','Data Scientist','Java Full Stack Developer','Python Full Stack Developer','AI Test Automation Engineer','DevOps Engineer','Cybersecurity Analyst','UI/UX Designer','Generative AI Practitioner','Digital Marketer','Medical Coder'];
       if(!role||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
       let index=0;
       window.setInterval(()=>{
