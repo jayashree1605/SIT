@@ -14,7 +14,7 @@
 <body class="contact-page">
   <header class="header">
     <div class="wrap nav-wrap">
-      <a class="logo" href="index.html#home" aria-label="SIT home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3.5 36 12.7v14.6L20 36.5 4 27.3V12.7L20 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m10 15.5 10-5.8 10 5.8-10 5.8-10-5.8Zm0 6 10 5.8 10-5.8" fill="none" stroke="#ffc83d" stroke-width="1.8" stroke-linejoin="round"/><circle cx="20" cy="15.5" r="2.2" fill="#ffc83d"/></svg><span class="logo-badge">SIT</span><span class="logo-word">SUCCESS INFO TECHNOLOGY</span></a>
+      <a class="logo" href="index.html#home" aria-label="SIT home"><img src="images/sit-logo.png" alt="SIT Success Info Technology"></a>
       <nav aria-label="Main navigation">
         <ul class="nav-links" id="contactNavLinks">
           <li><a href="about.html">About</a></li>
@@ -48,46 +48,97 @@
         </div>
         <div class="form-stage">
           <form class="enquiry-card contact-enquiry-card" id="contactEnquiryForm">
-            <h2>Get free guidance</h2>
-            <p>A no-pressure course conversation.</p>
-            <div class="field">
-              <label for="contactStudentName">Your name</label>
-              <input id="contactStudentName" name="name" autocomplete="name" placeholder="e.g. Alex Morgan" required>
+            <h2>Student enquiry form</h2>
+            <p>Share your details and interests so our team can guide you.</p>
+            <div class="contact-form-grid">
+              <div class="field">
+                <label for="contactStudentName">Student name</label>
+                <input id="contactStudentName" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="contactFatherName">Father’s name</label>
+                <input id="contactFatherName" name="fatherName" autocomplete="off" required>
+              </div>
+              <div class="field">
+                <label for="contactStudentPhone">Phone number</label>
+                <input id="contactStudentPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" minlength="7" maxlength="20" required>
+              </div>
+              <div class="field">
+                <label for="contactStudentEmail">Email address</label>
+                <input id="contactStudentEmail" name="email" type="email" autocomplete="email" required>
+              </div>
+              <div class="field">
+                <label for="contactStudentCity">City</label>
+                <input id="contactStudentCity" name="city" autocomplete="address-level2" required>
+              </div>
+              <div class="field">
+                <label for="contactInterestType">Interested in</label>
+                <select id="contactInterestType" name="interestType" required>
+                  <option value="">Choose one</option>
+                  <option value="course">Course</option>
+                  <option value="internship">Internship</option>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="contactCourseSelect">Which course or internship?</label>
+                <select id="contactCourseSelect" name="course" required disabled>
+                  <option value=""></option>
+                  <optgroup label="Courses" data-interest-group="course" hidden>
+                    <option value="Data Science with AI">Data Science with AI</option>
+                    <option value="Data Analytics">Data Analytics</option>
+                    <option value="Generative AI">Generative AI</option>
+                    <option value="AI Integrated Automated Testing">AI Integrated Automated Testing</option>
+                    <option value="AI Integrated Full Stack Development Java">AI Integrated Full Stack Development Java</option>
+                    <option value="AI Integrated Full Stack Development Python">AI Integrated Full Stack Development Python</option>
+                    <option value="Cloud with AWS">Cloud with AWS</option>
+                    <option value="DevOps Engineering">DevOps Engineering</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="UI/UX Design">UI/UX Design</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="Medical Coding">Medical Coding</option>
+                  </optgroup>
+                  <optgroup label="Internships" data-interest-group="internship" hidden>
+                    <option value="Web Development (MERN Stack)">Web Development (MERN Stack)</option>
+                    <option value="Java Full Stack Development">Java Full Stack Development</option>
+                    <option value="Data Analytics Internship">Data Analytics</option>
+                    <option value="Data Science &amp; Machine Learning Internship">Data Science &amp; Machine Learning</option>
+                    <option value="Artificial Intelligence Internship">Artificial Intelligence (AI)</option>
+                    <option value="Cloud Computing Internship">Cloud Computing</option>
+                    <option value="DevOps Engineering Internship">DevOps Engineering</option>
+                    <option value="Cyber Security Internship">Cyber Security</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="field field--full">
+                <label for="contactDegree">Degree / qualification</label>
+                <input id="contactDegree" name="degree" placeholder="e.g. B.Sc. Computer Science" required>
+              </div>
+              <div class="field field--full">
+                <label for="contactEducationStatus">Education status</label>
+                <select id="contactEducationStatus" name="educationStatus" required>
+                  <option value="">Choose your current status</option>
+                  <option value="currently-studying">Currently studying</option>
+                  <option value="passed-out">Passed out</option>
+                </select>
+              </div>
+              <div class="field field--full" id="studyYearField" hidden>
+                <label for="contactStudyYear">Which year are you currently studying?</label>
+                <select id="contactStudyYear" name="studyYear" disabled>
+                  <option value="">Choose your year</option>
+                  <option value="1st year">1st year</option>
+                  <option value="2nd year">2nd year</option>
+                  <option value="3rd year">3rd year</option>
+                  <option value="4th year">4th year</option>
+                  <option value="5th year or above">5th year or above</option>
+                </select>
+              </div>
+              <div class="field field--full" id="graduationYearField" hidden>
+                <label for="contactGraduationYear">Which year did you pass out?</label>
+                <input id="contactGraduationYear" name="graduationYear" type="number" min="1950" max="2099" step="1" inputmode="numeric" disabled>
+              </div>
             </div>
-            <div class="field">
-              <label for="contactStudentPhone">Phone number</label>
-              <input id="contactStudentPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Your best contact number" minlength="7" maxlength="20" required>
-            </div>
-            <div class="field">
-              <label for="contactCourseSelect">I’m interested in</label>
-              <select id="contactCourseSelect" name="course" required>
-                <option value="">Choose a course</option>
-                <option value="Corporate training enquiry">Corporate training enquiry</option>
-                <option value="Internship opportunities">Internship opportunities</option>
-                <option value="Internship: Web Development (MERN Stack)">Internship: Web Development (MERN Stack)</option>
-                <option value="Internship: Java Full Stack Development">Internship: Java Full Stack Development</option>
-                <option value="Internship: Data Analytics">Internship: Data Analytics</option>
-                <option value="Internship: Data Science &amp; Machine Learning">Internship: Data Science &amp; Machine Learning</option>
-                <option value="Internship: Artificial Intelligence (AI)">Internship: Artificial Intelligence (AI)</option>
-                <option value="Internship: Cloud Computing">Internship: Cloud Computing</option>
-                <option value="Internship: DevOps Engineering">Internship: DevOps Engineering</option>
-                <option value="Internship: Cyber Security">Internship: Cyber Security</option>
-                <option value="Data Science with AI">Data Science with AI</option>
-                <option value="Data Analytics">Data Analytics</option>
-                <option value="Generative AI">Generative AI</option>
-                <option value="AI Integrated Automated Testing">AI Integrated Automated Testing</option>
-                <option value="AI Integrated Full Stack Development Java">AI Integrated Full Stack Development Java</option>
-                <option value="AI Integrated Full Stack Development Python">AI Integrated Full Stack Development Python</option>
-                <option value="Cloud with AWS">Cloud with AWS</option>
-                <option value="DevOps Engineering">DevOps Engineering</option>
-                <option value="Cyber Security">Cyber Security</option>
-                <option value="UI/UX Design">UI/UX Design</option>
-                <option value="Digital Marketing">Digital Marketing</option>
-                <option value="Medical Coding">Medical Coding</option>
-              </select>
-            </div>
-            <button class="btn btn-yellow" type="submit">Request free guidance <span aria-hidden="true">→</span></button>
-            <p class="form-note" id="contactFormMessage" role="status">Your details will be used to respond to your enquiry. Form submissions are not enabled yet.</p>
+            <button class="btn btn-yellow" type="submit">Submit enquiry <span aria-hidden="true">→</span></button>
+            <p class="form-note" id="contactFormMessage" role="status">Your details will be used to respond to your enquiry. This form is not connected to a submission service yet.</p>
           </form>
         </div>
       </div>
@@ -109,7 +160,7 @@
     <div class="wrap">
       <div class="footer-grid">
         <div class="footer-about">
-          <a class="logo" href="index.html#home" aria-label="SIT home"><svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 3.5 36 12.7v14.6L20 36.5 4 27.3V12.7L20 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m10 15.5 10-5.8 10 5.8-10 5.8-10-5.8Zm0 6 10 5.8 10-5.8" fill="none" stroke="#ffc83d" stroke-width="1.8" stroke-linejoin="round"/><circle cx="20" cy="15.5" r="2.2" fill="#ffc83d"/></svg><span class="logo-badge">SIT</span><span class="logo-word">SUCCESS INFO TECHNOLOGY</span></a>
+          <a class="logo" href="index.html#home" aria-label="SIT home"><img src="images/sit-logo.svg" alt=""><span class="logo-name">SUCCESS INFO<span>TECHNOLOGY</span></span></a>
           <p>Explore practical technology courses, build skills through hands-on learning, and plan your next career step with SIT Academy.</p>
         </div>
         <div class="footer-col"><h3>Explore</h3><a href="index.html#courses">Technology courses</a><a href="index.html#finder">Career quiz</a><a href="index.html#corporate-training">Corporate training</a><a href="index.html#internships">Internship pathways</a></div>
@@ -121,6 +172,33 @@
   </footer>
   <script>
     document.querySelector('#yearNow').textContent = new Date().getFullYear();
+    const interestType = document.querySelector('#contactInterestType');
+    const courseSelect = document.querySelector('#contactCourseSelect');
+    const courseGroups = courseSelect.querySelectorAll('[data-interest-group]');
+    interestType.addEventListener('change', () => {
+      courseSelect.value = '';
+      courseGroups.forEach(group => {
+        group.hidden = group.dataset.interestGroup !== interestType.value;
+      });
+      courseSelect.disabled = !interestType.value;
+    });
+    const educationStatus = document.querySelector('#contactEducationStatus');
+    const studyYearField = document.querySelector('#studyYearField');
+    const studyYearSelect = document.querySelector('#contactStudyYear');
+    const graduationYearField = document.querySelector('#graduationYearField');
+    const graduationYearInput = document.querySelector('#contactGraduationYear');
+    educationStatus.addEventListener('change', () => {
+      const studying = educationStatus.value === 'currently-studying';
+      const passedOut = educationStatus.value === 'passed-out';
+      studyYearField.hidden = !studying;
+      studyYearSelect.disabled = !studying;
+      studyYearSelect.required = studying;
+      if (!studying) studyYearSelect.value = '';
+      graduationYearField.hidden = !passedOut;
+      graduationYearInput.disabled = !passedOut;
+      graduationYearInput.required = passedOut;
+      if (!passedOut) graduationYearInput.value = '';
+    });
     document.querySelector('#contactEnquiryForm').addEventListener('submit', event => {
       event.preventDefault();
       const message = document.querySelector('#contactFormMessage');
