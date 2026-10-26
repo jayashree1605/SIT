@@ -83,10 +83,10 @@
     .nav-wrap { width: 100%; max-width: none; height: 74px; display: flex; align-items: center; gap: 28px; margin-inline: auto; padding-inline: clamp(20px, 3vw, 48px); }
     .nav-wrap > nav { flex: 1; min-width: 0; display: flex; justify-content: center; }
     .logo { display: inline-flex; align-items: center; gap: 10px; flex: 0 0 auto; line-height: 1; }
-    .logo img { display: block; width: 112px; height: 74px; object-fit: contain; transition: transform .25s; }
+    .logo img { display: block; width: 88px; height: 48px; object-fit: contain; transition: transform .25s; }
     .logo:hover img { transform: translateY(-2px); }
-    .logo-name { display: grid; gap: 4px; color: #0b1f3a; font-size: 10px; font-weight: 800; letter-spacing: .09em; line-height: 1.2; white-space: nowrap; }
-    .logo-name span { color: #2563eb; font-size: 9px; letter-spacing: .16em; }
+    .logo-name { display: grid; justify-items: start; gap: 4px; color: #183253; font: 800 15px/1 var(--display); letter-spacing: -.025em; white-space: nowrap; }
+    .logo-name span { width: max-content; padding: 4px 7px 3px; color: #1d4ed8; background: #edf4ff; border: 1px solid #d8e6fb; border-left: 2px solid #2563eb; border-radius: 0 4px 4px 0; font: 700 9px/1 var(--body); letter-spacing: .17em; text-transform: uppercase; }
     .nav-links { display: flex; align-items: center; justify-content: center; gap: 21px; margin: 0 auto; padding: 0; list-style: none; }
     .nav-links a { color: var(--deep-navy); font-size: 12px; font-weight: 600; transition: color .2s; }
     .nav-links a:hover { color: var(--primary-blue); }
@@ -547,7 +547,7 @@
     .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1.35fr; gap: 38px; padding-bottom: 42px; }
     .footer .logo img { width: 142px; height: 58px; }
     .footer .logo-name { color: #f4f8ff; }
-    .footer .logo-name span { color: #bfdbfe; }
+    .footer .logo-name span { color: #bfdbfe; background: rgba(71, 115, 190, .16); border-color: rgba(147, 184, 240, .25); border-left-color: #60a5fa; }
     .footer-about p { max-width: 250px; margin: 18px 0 0; color: #8ea3c8; font-size: 11px; }
     .footer-col h3 { margin: 3px 0 14px; color: #dce9ff; font-size: 11px; letter-spacing: .05em; }
     .footer-col p { margin: 8px 0; color: #8ea3c8; font-size: 10px; line-height: 1.6; }
@@ -628,6 +628,7 @@
 
     @media (max-width: 1000px) {
       .nav-wrap { gap: 15px; }.nav-links { gap: 12px; }.nav-links a, .nav-course-toggle { font-size: 11px; }.nav-actions .btn { display: none; }
+      .header .logo img { width: 80px; height: 44px; }
       .hero-layout { gap: 30px; }.hero h1 { font-size: clamp(37px, 5.12vw, 54px); }
       .addon-benefits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
@@ -635,8 +636,10 @@
       html { scroll-padding-top: 70px; }.wrap { width: min(100% - 34px, var(--wrap)); }.section { padding: 72px 0; }
       .announcement { font-size: 10px; gap: 6px; }.announcement a { margin-left: 0; }
       .nav-wrap { width: 100%; height: 64px; justify-content: space-between; padding-inline: 17px; }.menu-toggle { display: block; order: 3; }.nav-actions { margin-left: auto; }.search-trigger { width: 39px; height: 39px; padding: 0; justify-content: center; font-size: 0; }.search-trigger kbd { display: none; }
-      .header .logo img { width: min(100px, 29vw); height: 62px; }
+      .header .logo img { width: min(72px, 20vw); height: 40px; }
       .header .logo { gap: 7px; }
+      .header .logo-name { font-size: 14px; }
+      .header .logo-name span { padding: 3px 6px 2px; font-size: 8px; }
       .nav-links { position: absolute; top: 64px; left: 0; right: 0; display: none; align-items: stretch; padding: 10px 18px 17px; background: #07112d; border-bottom: 1px solid var(--line); }
       .nav-links.open { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px 12px; }.nav-links a { display: block; padding: 10px; font-size: 12px; }
       .nav-courses, .nav-internships { grid-column: 1/-1; }
@@ -1136,7 +1139,9 @@
       .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
     @media (max-width: 480px) {
-      .header .logo img { width: min(90px, 27vw); height: 60px; }
+      .header .logo img { width: min(66px, 19vw); height: 36px; }
+      .header .logo-name { font-size: 12px; }
+      .header .logo-name span { padding: 3px 5px 2px; font-size: 7px; }
       .wrap { width: min(100% - 34px, var(--wrap)); }
       .hero h1 { font-size: clamp(40px, 11.5vw, 52px); }
       .hero-buttons { align-items: stretch; flex-direction: column; }
