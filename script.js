@@ -444,7 +444,7 @@
       function closeInternshipMenu(returnFocus=false){internshipMenu.hidden=true;internshipMenuToggle.setAttribute('aria-expanded','false');if(returnFocus)internshipMenuToggle.focus();}
       courseMenuToggle.addEventListener('click',()=>{const opening=courseMenu.hidden;closeInternshipMenu();courseMenu.hidden=!opening;courseMenuToggle.setAttribute('aria-expanded',String(opening));});
       internshipMenuToggle.addEventListener('click',()=>{const opening=internshipMenu.hidden;closeCourseMenu();internshipMenu.hidden=!opening;internshipMenuToggle.setAttribute('aria-expanded',String(opening));});
-      courseMenu.addEventListener('click',event=>{const button=event.target.closest('[data-course]');if(!button)return;const id=button.dataset.course;closeCourseMenu();$('#navLinks').classList.remove('open');$('#menuToggle').setAttribute('aria-expanded','false');$('#menuToggle').setAttribute('aria-label','Open navigation');openCourse(id);});
+      courseMenu.addEventListener('click',event=>{const button=event.target.closest('[data-course]');if(!button)return;closeCourseMenu();openCourse(button.dataset.course);});
       internshipMenu.addEventListener('click',event=>{if(!event.target.closest('a'))return;closeInternshipMenu();});
       document.addEventListener('click',event=>{if(!courseNav.contains(event.target))closeCourseMenu();if(!internshipNav.contains(event.target))closeInternshipMenu();});
       document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!courseMenu.hidden)closeCourseMenu(true);if(event.key==='Escape'&&!internshipMenu.hidden)closeInternshipMenu(true);});

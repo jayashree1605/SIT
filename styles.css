@@ -112,6 +112,7 @@
     .nav-course-toggle { display: inline-flex; align-items: center; padding: 8px 0; color: var(--deep-navy); background: transparent; border: 0; cursor: pointer; font: 600 12px var(--body); }
     .nav-course-toggle:hover, .nav-course-toggle[aria-expanded="true"] { color: var(--primary-blue); }
     .course-menu { position: absolute; z-index: 90; top: calc(100% + 18px); left: -18px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 5px; width: min(620px, 85vw); max-height: min(68vh, 560px); overflow: auto; padding: 12px; background: rgba(255,255,255,0.96); border: 1px solid rgba(37,99,235,0.15); border-radius: 9px; box-shadow: 0 20px 55px rgba(11,31,58,0.15); }
+    #courseMenu.internship-nav-menu { grid-template-columns: repeat(2, minmax(0, 1fr)); width: min(620px, 85vw); max-height: min(68vh, 560px); overflow: auto; padding: 12px; }
     .course-menu[hidden] { display: none; }
     .course-menu-item { display: block; width: 100%; padding: 12px; color: var(--deep-navy); text-align: left; background: #f8fbff; border: 1px solid rgba(11,31,58,0.08); border-radius: 6px; cursor: pointer; transition: background .2s, border-color .2s, transform .2s; }
     .course-menu-item:hover { background: #edf5ff; border-color: rgba(37,99,235,0.2); transform: translateY(-1px); }
@@ -3231,4 +3232,82 @@
         radial-gradient(ellipse at 93% 88%, rgba(101, 223, 196, .18), transparent 37%),
         linear-gradient(145deg, transparent 36%, rgba(255, 255, 255, .48) 36.2%, rgba(255, 255, 255, .48) 58%, transparent 58.2%);
       background-size: auto, auto, 100% 100%;
+    }
+
+    /* Footer typography */
+    .footer .footer-about p { font-size: 13px; }
+    .footer .footer-col h3 { font-size: 13px; }
+    .footer .footer-col p,
+    .footer .footer-col a,
+    .footer .footer-col address { font-size: 12px; }
+    .footer .footer-bottom { font-size: 11px; }
+    .footer .about-footer-links a,
+    .footer .about-footer > p { font-size: 12px; }
+
+    /* Internship pathway card typography */
+    #internships .internship-course-card,
+    #internships .internship-course-content { min-height: 330px; }
+    #internships .internship-topic { font-size: 12px; }
+    #internships .internship-course-content h3 { font-size: 23px; line-height: 1.22; }
+    #internships .internship-course-content p { font-size: 15px; line-height: 1.55; }
+    #internships .internship-tags span { font-size: 12px; }
+    #internships .internship-course-content button { min-height: 42px; font-size: 13px; }
+    #internships .internship-course-content button span { font-size: 16px; }
+
+    @media (max-width: 760px) {
+      #internships .internship-course-card,
+      #internships .internship-course-content { min-height: 290px; }
+      #internships .internship-topic { font-size: 11px; }
+      #internships .internship-course-content h3 { font-size: 21px; }
+      #internships .internship-course-content p { font-size: 14px; }
+      #internships .internship-tags span { font-size: 11px; }
+      #internships .internship-course-content button { font-size: 12px; }
+    }
+
+    /* Course list typography */
+    .course-result-count,
+    .course-sort,
+    .course-search { font-size: 13px; }
+    .course-meta { font-size: 12px; }
+    .course-info h3 { font-size: 22px; }
+    .course-info p { font-size: 14px; line-height: 1.55; }
+    .course-foot { font-size: 12px; }
+    .course-foot strong { font-size: 13px; }
+    .course-syllabus-top { font-size: 11px; }
+    .course-syllabus-top span:last-child { font-size: 11px; }
+    .course-syllabus h4 { font-size: 19px; }
+    .course-syllabus li { font-size: 13px; line-height: 1.35; }
+
+    @media (max-width: 760px) {
+      .course-result-count,
+      .course-sort,
+      .course-search { font-size: 12px; }
+      .course-meta { font-size: 11px; }
+      .course-info h3 { font-size: 19px; }
+      .course-info p { font-size: 13px; }
+      .course-foot { font-size: 11px; }
+      .course-foot strong { font-size: 12px; }
+      .course-syllabus-top { font-size: 10px; }
+      .course-syllabus-top span:last-child { font-size: 10px; }
+      .course-syllabus h4 { font-size: 17px; }
+      .course-syllabus li { font-size: 12px; }
+    }
+
+    /* Header typography */
+    .header .nav-links a,
+    .header .nav-course-toggle { font-size: 14px; }
+    .header .search-trigger { font-size: 13px; }
+    .header .nav-actions .btn { font-size: 13px; }
+
+    @media (max-width: 1000px) {
+      .header .nav-links a,
+      .header .nav-course-toggle { font-size: 12px; }
+      .header .search-trigger { font-size: 11px; }
+      .header .nav-actions .btn { font-size: 11px; }
+    }
+
+    @media (max-width: 760px) {
+      .header .nav-links a,
+      .header .nav-course-toggle { font-size: 12px; }
+      .header .nav-actions .btn { font-size: 12px; }
     }
